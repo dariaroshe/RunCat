@@ -7,8 +7,7 @@ namespace Player
     {
         private GameModel _gameModel;
         private GameScene _gameScene;
-
-        public Animator Animator;
+        
         private static readonly int Jump = Animator.StringToHash("Jump");
 
         public override void Initialize(GameModel gameModel, GameScene gameScene)
@@ -19,9 +18,11 @@ namespace Player
         
         private void Update()
         {
+            var playerAnimator = _gameScene.PlayerAnimator;
+            
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                Animator.SetTrigger(Jump);
+                playerAnimator.SetTrigger(Jump);
             }
         }
     }
