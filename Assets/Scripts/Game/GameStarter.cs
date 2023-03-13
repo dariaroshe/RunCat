@@ -13,8 +13,8 @@ namespace Game
             
             GameScene.StartGameComponent.Initialize(gameModel, GameScene);
             
-            GameScene.RunCatComponent.Initialize(gameModel, GameScene);
-            GameScene.JumpCatComponent.Initialize(gameModel, GameScene);
+            GameScene.RunPlayerComponent.Initialize(gameModel, GameScene);
+            GameScene.JumpPlayerComponent.Initialize(gameModel, GameScene);
             
             GameScene.MovePlatformComponent.Initialize(gameModel, GameScene);
             GameScene.TeleportPlatformComponent.Initialize(gameModel, GameScene);
@@ -26,7 +26,7 @@ namespace Game
            
             GameScene.SpawnBarriersComponent.Initialize(gameModel, GameScene);
             
-            GameScene.CatDeadAnimationComponent.Initialize(gameModel, GameScene);
+            GameScene.PlayerDeadAnimationComponent.Initialize(gameModel, GameScene);
         }
     }
 }

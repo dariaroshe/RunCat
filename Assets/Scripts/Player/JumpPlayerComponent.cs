@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Player
 {
-    public class JumpCatComponent : GameComponent
+    public class JumpPlayerComponent : GameComponent
     {
         private GameModel _gameModel;
         private GameScene _gameScene;

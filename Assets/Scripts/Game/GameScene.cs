@@ -9,8 +9,8 @@ namespace Game
     {
         public StartGameComponent StartGameComponent;
         
-        public RunCatComponent RunCatComponent;
-        public JumpCatComponent JumpCatComponent;
+        public RunPlayerComponent RunPlayerComponent;
+        public JumpPlayerComponent JumpPlayerComponent;
 
         public MovePlatformComponent MovePlatformComponent;
         public TeleportPlatformComponent TeleportPlatformComponent;
@@ -18,7 +18,7 @@ namespace Game
         public MoveBarriersComponent[] MoveBarriersComponent;
         public SpawnBarriersComponent SpawnBarriersComponent;
 
-        public CatDeadAnimationComponent CatDeadAnimationComponent;
+        public PlayerDeadAnimationComponent PlayerDeadAnimationComponent;
 
         public Transform[] Platforms;
         public GameObject[] Barriers;

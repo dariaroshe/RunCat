@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Player
 {
-    public class CatDeadAnimationComponent : GameComponent
+    public class PlayerDeadAnimationComponent : GameComponent
     {
         private static readonly int Dead = Animator.StringToHash("Dead");
 

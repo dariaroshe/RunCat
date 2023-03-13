@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Player
 {
-    public class RunCatComponent : GameComponent
+    public class RunPlayerComponent : GameComponent
     {
         private GameModel _gameModel;
         private GameScene _gameScene;

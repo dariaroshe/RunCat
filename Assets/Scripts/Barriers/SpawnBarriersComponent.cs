@@ -38,7 +38,7 @@ namespace Barriers
                         Quaternion.identity);
 
                     var barrierMove = newBarrier.GetComponent<MoveBarriersComponent>();
-                    var barrierDeadTrigger = newBarrier.GetComponent<TriggerDeadCatComponent>();
+                    var barrierDeadTrigger = newBarrier.GetComponent<TriggerDeadPlayerComponent>();
                     
                     barrierMove.Initialize(_gameModel, _gameScene);
                     barrierDeadTrigger.Initialize(_gameModel, _gameScene);

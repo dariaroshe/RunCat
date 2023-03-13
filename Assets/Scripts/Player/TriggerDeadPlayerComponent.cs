@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Player
 {
-    public class TriggerDeadCatComponent : GameComponent
+    public class TriggerDeadPlayerComponent : GameComponent
     {
         private GameModel _gameModel;
         private GameScene _gameScene;
@@ -19,7 +19,7 @@ namespace Player
         {
             var gameState = _gameModel.GameState;
             
-            if (other.TryGetComponent<RunCatComponent>(out var cat))
+            if (other.TryGetComponent<RunPlayerComponent>(out var cat))
             {
                 gameState.Value = GameState.GameOver;
             }
