@@ -8,7 +8,6 @@ namespace Player
         private GameModel _gameModel;
         private GameScene _gameScene;
 
-        [SerializeField] private Animator _animator;
         private static readonly int IsMoving = Animator.StringToHash("IsMoving");
 
         public override void Initialize(GameModel gameModel, GameScene gameScene)
@@ -19,9 +18,11 @@ namespace Player
         
         private void Update()
         {
+            var playerAnimator = _gameScene.PlayerAnimator;
+            
             if (Input.GetKeyDown(KeyCode.Return))
             {
-                _animator.SetBool(IsMoving, true);
+                playerAnimator.SetBool(IsMoving, true);
             }
         }
     }
