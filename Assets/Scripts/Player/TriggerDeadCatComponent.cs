@@ -1,15 +1,13 @@
+using System;
 using Game;
 using UnityEngine;
 
 namespace Player
 {
-    public class RunCatComponent : GameComponent
+    public class TriggerDeadCatComponent : GameComponent
     {
         private GameModel _gameModel;
         private GameScene _gameScene;
-
-        [SerializeField] private Animator _animator;
-        private static readonly int IsMoving = Animator.StringToHash("IsMoving");
 
         public override void Initialize(GameModel gameModel, GameScene gameScene)
         {
@@ -17,11 +15,13 @@ namespace Player
             _gameScene = gameScene;
         }
         
-        private void Update()
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            if (Input.GetKeyDown(KeyCode.Return))
+            var gameState = _gameModel.GameState;
+            
+            if (other.TryGetComponent<RunCatComponent>(out var cat))
             {
-                _animator.SetBool(IsMoving, true);
+                gameState.Value = GameState.GameOver;
             }
         }
     }

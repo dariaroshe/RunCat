@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Game;
+using Player;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -37,10 +38,13 @@ namespace Barriers
                         Quaternion.identity);
 
                     var barrierMove = newBarrier.GetComponent<MoveBarriersComponent>();
+                    var barrierDeadTrigger = newBarrier.GetComponent<TriggerDeadCatComponent>();
+                    
                     barrierMove.Initialize(_gameModel, _gameScene);
+                    barrierDeadTrigger.Initialize(_gameModel, _gameScene);
                 }
 
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(4f);
             }
         }
     }

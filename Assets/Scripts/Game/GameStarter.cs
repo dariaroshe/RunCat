@@ -10,7 +10,9 @@ namespace Game
         private void Start()
         {
             var gameModel = new GameModel();
-
+            
+            GameScene.StartGameComponent.Initialize(gameModel, GameScene);
+            
             GameScene.RunCatComponent.Initialize(gameModel, GameScene);
             GameScene.JumpCatComponent.Initialize(gameModel, GameScene);
             
@@ -23,6 +25,8 @@ namespace Game
             }
            
             GameScene.SpawnBarriersComponent.Initialize(gameModel, GameScene);
+            
+            GameScene.CatDeadAnimationComponent.Initialize(gameModel, GameScene);
         }
     }
 }

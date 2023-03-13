@@ -18,11 +18,15 @@ namespace Platforms
         {
             var platforms = _gameScene.Platforms;
             var speed = _gameScene.SpeedPlatform;
+            var gameState = _gameModel.GameState;
             
-            for (int i = 0; i < platforms.Length; i++)
+            if(gameState.Value == GameState.Playing)
             {
-                var moveX = platforms[i].position.x - speed * Time.deltaTime;
-                platforms[i].position = new Vector3(moveX, platforms[i].position.y, platforms[i].position.z);
+                for (int i = 0; i < platforms.Length; i++)
+                {
+                    var moveX = platforms[i].position.x - speed * Time.deltaTime;
+                    platforms[i].position = new Vector3(moveX, platforms[i].position.y, platforms[i].position.z);
+                }
             }
         }
     }

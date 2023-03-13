@@ -1,15 +1,11 @@
-using Game;
 using UnityEngine;
 
-namespace Player
+namespace Game
 {
-    public class RunCatComponent : GameComponent
+    public class StartGameComponent : GameComponent
     {
         private GameModel _gameModel;
         private GameScene _gameScene;
-
-        [SerializeField] private Animator _animator;
-        private static readonly int IsMoving = Animator.StringToHash("IsMoving");
 
         public override void Initialize(GameModel gameModel, GameScene gameScene)
         {
@@ -19,9 +15,9 @@ namespace Player
         
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Return) && _gameModel.GameState.Value == GameState.Start)
             {
-                _animator.SetBool(IsMoving, true);
+                _gameModel.GameState.Value = GameState.Playing;
             }
         }
     }
