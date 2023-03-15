@@ -21,7 +21,7 @@ namespace Player
         {
             var gameState = _gameModel.GameState;
             
-            if (Input.GetKeyDown(KeyCode.Space) && gameState.Value == GameState.Playing && _rigidbody2D.velocity == Vector2.zero)
+            if ((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) && gameState.Value == GameState.Playing && _rigidbody2D.velocity == Vector2.zero)
             {
                 _rigidbody2D.velocity = Vector2.up * _force;
             }

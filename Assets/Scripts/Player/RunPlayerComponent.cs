@@ -19,8 +19,9 @@ namespace Player
         private void Update()
         {
             var playerAnimator = _gameScene.PlayerAnimator;
+            var gameState = _gameModel.GameState;
             
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (gameState.Value == GameState.Playing)
             {
                 playerAnimator.SetBool(IsMoving, true);
             }

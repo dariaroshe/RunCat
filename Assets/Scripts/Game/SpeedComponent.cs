@@ -24,7 +24,6 @@ namespace Game
             if (gameState.Value == GameState.Playing)
             {
                 _gameModel.Speed += Time.deltaTime * acceleration;
-                Debug.Log(_gameModel.Speed);
             }
         }
     }

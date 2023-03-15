@@ -10,6 +10,7 @@ namespace Game
     public class GameScene : MonoBehaviour
     {
         public StartGameComponent StartGameComponent;
+        public StartGameTextComponent StartGameTextComponent;
         
         public RunPlayerComponent RunPlayerComponent;
         public JumpPlayerComponent JumpPlayerComponent;

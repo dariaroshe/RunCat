@@ -12,6 +12,7 @@ namespace Game
             var gameModel = new GameModel();
             
             GameScene.StartGameComponent.Initialize(gameModel, GameScene);
+            GameScene.StartGameTextComponent.Initialize(gameModel, GameScene);
             
             GameScene.RunPlayerComponent.Initialize(gameModel, GameScene);
             GameScene.JumpPlayerComponent.Initialize(gameModel, GameScene);
