@@ -914,7 +914,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02f1c92ebfcf56a4a83075a1f530e55e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 1042355734}
 --- !u!114 &1042355736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -927,7 +926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8109e16eac514c6e903778c73c188ef2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Animator: {fileID: 1042355734}
+  _rigidbody2D: {fileID: 1042355737}
 --- !u!50 &1042355737
 Rigidbody2D:
   serializedVersion: 4
@@ -940,10 +939,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1005,15 +1004,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartGameComponent: {fileID: 983947957}
-  RunCatComponent: {fileID: 1042355735}
-  JumpCatComponent: {fileID: 1042355736}
+  RunPlayerComponent: {fileID: 1042355735}
+  JumpPlayerComponent: {fileID: 1042355736}
   MovePlatformComponent: {fileID: 702995007}
   TeleportPlatformComponent: {fileID: 702995006}
   MoveBarriersComponent:
   - {fileID: 6314788888477075382, guid: 05f56475480677c43b0224446efece05, type: 3}
   - {fileID: 6189498175489285703, guid: 9db263c8aadafc24192039af797187e8, type: 3}
   SpawnBarriersComponent: {fileID: 157984972}
-  CatDeadAnimationComponent: {fileID: 1042355738}
+  PlayerDeadAnimationComponent: {fileID: 1042355738}
   Platforms:
   - {fileID: 578647745}
   - {fileID: 575848678}
