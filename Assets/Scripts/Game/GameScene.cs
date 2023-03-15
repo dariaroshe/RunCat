@@ -1,7 +1,9 @@
 using Barriers;
 using Platforms;
 using Player;
+using Points;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace Game
 {
@@ -19,6 +21,10 @@ namespace Game
         public SpawnBarriersComponent SpawnBarriersComponent;
 
         public PlayerDeadAnimationComponent PlayerDeadAnimationComponent;
+        public PlayerJumpAnimationComponent PlayerJumpAnimationComponent;
+
+        public PointsComponent PointsComponent;
+        public PointsTextComponent PointsTextComponent;
 
         public Transform[] Platforms;
         public GameObject[] Barriers;

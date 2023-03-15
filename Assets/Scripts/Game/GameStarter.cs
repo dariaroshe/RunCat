@@ -27,6 +27,10 @@ namespace Game
             GameScene.SpawnBarriersComponent.Initialize(gameModel, GameScene);
             
             GameScene.PlayerDeadAnimationComponent.Initialize(gameModel, GameScene);
+            GameScene.PlayerJumpAnimationComponent.Initialize(gameModel, GameScene);
+            
+            GameScene.PointsComponent.Initialize(gameModel, GameScene);
+            GameScene.PointsTextComponent.Initialize(gameModel, GameScene);
         }
     }
 }

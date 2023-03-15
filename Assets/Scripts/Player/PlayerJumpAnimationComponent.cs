@@ -10,39 +10,38 @@ namespace Player
         private GameScene _gameScene;
 
         [SerializeField] private Rigidbody2D _rigidbody2D;
-        [SerializeField] private Animator _animator;
         
         private static readonly int JumpUp = Animator.StringToHash("JumpUp");
         private static readonly int JumpDown = Animator.StringToHash("JumpDown");
         private static readonly int IsGrounded = Animator.StringToHash("IsGrounded");
-
-
+        
         public override void Initialize(GameModel gameModel, GameScene gameScene)
         {
             _gameModel = gameModel;
             _gameScene = gameScene;
-
-            _gameModel.GameState.Changed += OnGameStateChanged;
         }
-
-        private void OnDestroy()
+        
+        private void Update()
         {
-            _gameModel.GameState.Changed -= OnGameStateChanged;
-        }
-
-        private void OnGameStateChanged()
-        {
-            if (_rigidbody2D.velocity.y > 0)
+            var playerAnimator = _gameScene.PlayerAnimator;
+            var gameState = _gameModel.GameState;
+            
+            if (gameState.Value == GameState.Playing)
             {
-                _animator.SetTrigger(JumpUp);
-            }
-            else if(_rigidbody2D.velocity.y < 0)
-            {
-                _animator.SetTrigger(JumpDown);
-            }
-            else if (_rigidbody2D.velocity.y == 0)
-            {
-                _animator.SetBool(IsGrounded, true);
+                if (_rigidbody2D.velocity.y > 0.1f)
+                {
+                    playerAnimator.SetTrigger(JumpUp);
+                    playerAnimator.SetBool(IsGrounded, false);
+                }
+                else if (_rigidbody2D.velocity.y < -0.1f)
+                {
+                    playerAnimator.SetTrigger(JumpDown);
+                    playerAnimator.SetBool(IsGrounded, false);
+                }
+                else
+                {
+                    playerAnimator.SetBool(IsGrounded, true);
+                }
             }
         }
     }
