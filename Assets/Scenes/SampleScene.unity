@@ -927,6 +927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody2D: {fileID: 1042355737}
+  _force: 6
 --- !u!50 &1042355737
 Rigidbody2D:
   serializedVersion: 4
@@ -1020,8 +1021,8 @@ MonoBehaviour:
   Barriers:
   - {fileID: 6400209852018288032, guid: 9db263c8aadafc24192039af797187e8, type: 3}
   - {fileID: 2171453732245430658, guid: 05f56475480677c43b0224446efece05, type: 3}
-  SpeedPlatform: 2
-  SpeedBarrier: 2
+  SpeedPlatform: 5
+  SpeedBarrier: 5
   PlayerAnimator: {fileID: 1042355734}
 --- !u!1 &1706413092
 GameObject:
