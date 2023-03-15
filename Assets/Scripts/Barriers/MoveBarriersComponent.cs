@@ -18,7 +18,7 @@ namespace Barriers
 
         private void FixedUpdate()
         {
-            var speed = _gameScene.SpeedBarrier;
+            var speed = _gameModel.Speed;
             var gameState = _gameModel.GameState;
             var barrierPosition = _barrier.transform.position;
 

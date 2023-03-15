@@ -31,6 +31,8 @@ namespace Game
             
             GameScene.PointsComponent.Initialize(gameModel, GameScene);
             GameScene.PointsTextComponent.Initialize(gameModel, GameScene);
+            
+            GameScene.SpeedComponent.Initialize(gameModel, GameScene);
         }
     }
 }

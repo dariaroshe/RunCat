@@ -17,7 +17,7 @@ namespace Platforms
         private void FixedUpdate()
         {
             var platforms = _gameScene.Platforms;
-            var speed = _gameScene.SpeedPlatform;
+            var speed = _gameModel.Speed;
             var gameState = _gameModel.GameState;
             
             if(gameState.Value == GameState.Playing)
