@@ -1,3 +1,4 @@
+using Background;
 using Barriers;
 using UnityEngine;
 
@@ -26,6 +27,11 @@ namespace Game
             }
            
             GameScene.SpawnBarriersComponent.Initialize(gameModel, GameScene);
+            
+            for (int i = 0; i < GameScene.MoveBackgroundComponent.Length; i++)
+            {
+                GameScene.MoveBackgroundComponent[i].Initialize(gameModel, GameScene);
+            }
             
             GameScene.PlayerDeadAnimationComponent.Initialize(gameModel, GameScene);
             GameScene.PlayerJumpAnimationComponent.Initialize(gameModel, GameScene);

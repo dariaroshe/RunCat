@@ -1,3 +1,4 @@
+using Background;
 using Barriers;
 using Platforms;
 using Player;
@@ -21,6 +22,8 @@ namespace Game
         public MoveBarriersComponent[] MoveBarriersComponent;
         public SpawnBarriersComponent SpawnBarriersComponent;
 
+        public MoveBackgroundComponent[] MoveBackgroundComponent;
+
         public PlayerDeadAnimationComponent PlayerDeadAnimationComponent;
         public PlayerJumpAnimationComponent PlayerJumpAnimationComponent;
 
@@ -30,7 +33,9 @@ namespace Game
         public SpeedComponent SpeedComponent;
 
         public Transform[] Platforms;
+
         public GameObject[] Barriers;
+        public GameObject[] Items;
 
         public float StartSpeed;
         public float Acceleration;
