@@ -2,14 +2,15 @@ using System;
 using Game;
 using UnityEngine;
 
-namespace Player
+namespace Popups
 {
-    public class PlayerDeadAnimationComponent : GameComponent
+    public class PopupGameOverAnimationComponent : GameComponent
     {
-        private static readonly int Dead = Animator.StringToHash("Dead");
-
         private GameModel _gameModel;
         private GameScene _gameScene;
+
+        [SerializeField] private Animator _gameOverAnimator;
+        private static readonly int Show = Animator.StringToHash("Show");
 
         public override void Initialize(GameModel gameModel, GameScene gameScene)
         {
@@ -26,14 +27,12 @@ namespace Player
 
         private void OnGameStateChanged()
         {
-            var playerAnimator = _gameScene.PlayerAnimator;
-            var gameState = _gameModel.GameState;
+            var gameState = _gameModel.GameState.Value;
 
-            if (gameState.Value == GameState.GameOver)
+            if (gameState == GameState.GameOver)
             {
-                playerAnimator.SetTrigger(Dead);
+                _gameOverAnimator.SetTrigger(Show);
             }
         }
-
     }
 }

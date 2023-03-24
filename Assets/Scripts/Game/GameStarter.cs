@@ -36,6 +36,8 @@ namespace Game
             GameScene.PlayerDeadAnimationComponent.Initialize(gameModel, GameScene);
             GameScene.PlayerJumpAnimationComponent.Initialize(gameModel, GameScene);
             
+            GameScene.PopupGameOverAnimationComponent.Initialize(gameModel, GameScene);
+            
             GameScene.PointsComponent.Initialize(gameModel, GameScene);
             GameScene.PointsTextComponent.Initialize(gameModel, GameScene);
             

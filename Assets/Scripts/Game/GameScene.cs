@@ -3,6 +3,7 @@ using Barriers;
 using Platforms;
 using Player;
 using Points;
+using Popups;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -26,6 +27,8 @@ namespace Game
 
         public PlayerDeadAnimationComponent PlayerDeadAnimationComponent;
         public PlayerJumpAnimationComponent PlayerJumpAnimationComponent;
+
+        public PopupGameOverAnimationComponent PopupGameOverAnimationComponent;
 
         public PointsComponent PointsComponent;
         public PointsTextComponent PointsTextComponent;
