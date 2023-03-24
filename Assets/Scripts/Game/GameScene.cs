@@ -1,5 +1,6 @@
 using Background;
 using Barriers;
+using Buttons;
 using Platforms;
 using Player;
 using Points;
@@ -29,6 +30,9 @@ namespace Game
         public PlayerJumpAnimationComponent PlayerJumpAnimationComponent;
 
         public PopupGameOverAnimationComponent PopupGameOverAnimationComponent;
+
+        public YesButtonGameOverComponent YesButtonGameOverComponent;
+        public NoButtonGameOverComponent NoButtonGameOverComponent;
 
         public PointsComponent PointsComponent;
         public PointsTextComponent PointsTextComponent;

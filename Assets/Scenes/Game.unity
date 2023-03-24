@@ -1025,7 +1025,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &538558412
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1058,7 +1058,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 554900540}
-  - component: {fileID: 554900541}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -1083,18 +1082,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &554900541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 554900539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ec08703aa6b4d7984ce335c9ee2a4b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &575848677
 GameObject:
   m_ObjectHideFlags: 0
@@ -2450,6 +2437,8 @@ MonoBehaviour:
   PlayerDeadAnimationComponent: {fileID: 1042355738}
   PlayerJumpAnimationComponent: {fileID: 1042355739}
   PopupGameOverAnimationComponent: {fileID: 2106300183}
+  YesButtonGameOverComponent: {fileID: 2106300184}
+  NoButtonGameOverComponent: {fileID: 2106300185}
   PointsComponent: {fileID: 1042583028}
   PointsTextComponent: {fileID: 1042583029}
   SpeedComponent: {fileID: 225436356}
@@ -3917,6 +3906,8 @@ GameObject:
   - component: {fileID: 2106300181}
   - component: {fileID: 2106300182}
   - component: {fileID: 2106300183}
+  - component: {fileID: 2106300184}
+  - component: {fileID: 2106300185}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -3976,7 +3967,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8272a081dca94fa9bceccd8eb542b373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameObjects:
-  - {fileID: 538558411}
-  - {fileID: 1989512401}
   _gameOverAnimator: {fileID: 2106300182}
+--- !u!114 &2106300184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106300180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 199a33b955ea48e4a12b318a14772be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 790821890}
+--- !u!114 &2106300185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106300180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f102a8dd4994485bbfe5188a5e0a9df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 1537775176}
