@@ -30,9 +30,11 @@ namespace Game
         public PlayerJumpAnimationComponent PlayerJumpAnimationComponent;
 
         public PopupGameOverAnimationComponent PopupGameOverAnimationComponent;
-
+        public PopupPauseComponent PopupPauseComponent;
+        
         public YesButtonGameOverComponent YesButtonGameOverComponent;
         public NoButtonGameOverComponent NoButtonGameOverComponent;
+        public PauseButtonComponent PauseButtonComponent;
 
         public PointsComponent PointsComponent;
         public PointsTextComponent PointsTextComponent;
