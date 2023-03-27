@@ -35,6 +35,7 @@ namespace Game
         public YesButtonGameOverComponent YesButtonGameOverComponent;
         public NoButtonGameOverComponent NoButtonGameOverComponent;
         public PauseButtonComponent PauseButtonComponent;
+        public ContinueButtonPauseComponent ContinueButtonPauseComponent;
 
         public PointsComponent PointsComponent;
         public PointsTextComponent PointsTextComponent;

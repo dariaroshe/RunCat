@@ -19,11 +19,14 @@ namespace Barriers
         private void FixedUpdate()
         {
             var speed = _gameModel.Speed;
-            var gameState = _gameModel.GameState;
+            var gameState = _gameModel.GameState.Value;
             var barrierPosition = _barrier.transform.position;
-
-            var moveX = barrierPosition.x - speed * Time.deltaTime;
-            _barrier.transform.position = new Vector3(moveX, barrierPosition.y, barrierPosition.z);
+            
+            if (gameState == GameState.Playing)
+            {
+                var moveX = barrierPosition.x - speed * Time.deltaTime;
+                _barrier.transform.position = new Vector3(moveX, barrierPosition.y, barrierPosition.z);
+            }
         }
     }
 }

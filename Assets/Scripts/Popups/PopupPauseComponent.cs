@@ -30,7 +30,11 @@ namespace Popups
 
             if (gameState == GameState.Pause)
             {
-                _pauseAnimator.SetTrigger(Show);
+                _pauseAnimator.SetBool(Show, true);
+            }
+            else
+            {
+                _pauseAnimator.SetBool(Show, false);
             }
         }
     }

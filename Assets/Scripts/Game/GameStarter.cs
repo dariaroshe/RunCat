@@ -42,6 +42,7 @@ namespace Game
             GameScene.YesButtonGameOverComponent.Initialize(gameModel, GameScene);
             GameScene.NoButtonGameOverComponent.Initialize(gameModel, GameScene);
             GameScene.PauseButtonComponent.Initialize(gameModel, GameScene);
+            GameScene.ContinueButtonPauseComponent.Initialize(gameModel, GameScene);
             
             GameScene.PointsComponent.Initialize(gameModel, GameScene);
             GameScene.PointsTextComponent.Initialize(gameModel, GameScene);

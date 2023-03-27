@@ -2374,6 +2374,7 @@ GameObject:
   - component: {fileID: 986259135}
   - component: {fileID: 986259136}
   - component: {fileID: 986259137}
+  - component: {fileID: 986259138}
   m_Layer: 5
   m_Name: Pause
   m_TagString: Untagged
@@ -2433,6 +2434,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pauseAnimator: {fileID: 986259136}
+--- !u!114 &986259138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986259134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2c6165a958741f490123d5d209165b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 629283624}
 --- !u!1 &1024073363
 GameObject:
   m_ObjectHideFlags: 0
@@ -2992,6 +3006,7 @@ MonoBehaviour:
   YesButtonGameOverComponent: {fileID: 2106300184}
   NoButtonGameOverComponent: {fileID: 2106300185}
   PauseButtonComponent: {fileID: 1966014500}
+  ContinueButtonPauseComponent: {fileID: 986259138}
   PointsComponent: {fileID: 1042583028}
   PointsTextComponent: {fileID: 1042583029}
   SpeedComponent: {fileID: 225436356}
