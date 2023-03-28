@@ -24,7 +24,7 @@ namespace Barriers
             
             if (gameState == GameState.Playing)
             {
-                var moveX = barrierPosition.x - speed * Time.deltaTime;
+                var moveX = barrierPosition.x - speed * Time.deltaTime / _gameScene._a;
                 _barrier.transform.position = new Vector3(moveX, barrierPosition.y, barrierPosition.z);
             }
         }

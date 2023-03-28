@@ -16,7 +16,7 @@ namespace Buttons
             _gameModel = gameModel;
             _gameScene = gameScene;
 
-            _button.onClick.AddListener(OnClickButton);;
+            _button.onClick.AddListener(OnClickButton);
         }
 
         private void OnDestroy()

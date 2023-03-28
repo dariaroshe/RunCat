@@ -21,7 +21,7 @@ namespace Player
             
             if (other.TryGetComponent<RunPlayerComponent>(out var cat))
             {
-                gameState.Value = GameState.GameOver;
+               // gameState.Value = GameState.GameOver;
             }
         }
     }

@@ -31,7 +31,8 @@ namespace Game
 
         public PopupGameOverAnimationComponent PopupGameOverAnimationComponent;
         public PopupPauseComponent PopupPauseComponent;
-        
+
+        public PlayingButtonComponent PlayingButtonComponent;
         public YesButtonGameOverComponent YesButtonGameOverComponent;
         public NoButtonGameOverComponent NoButtonGameOverComponent;
         public PauseButtonComponent PauseButtonComponent;
@@ -51,5 +52,7 @@ namespace Game
         public float Acceleration;
 
         public Animator PlayerAnimator;
+
+        public float _a = 1f;
     }
 }

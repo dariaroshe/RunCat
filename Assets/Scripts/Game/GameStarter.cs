@@ -38,7 +38,8 @@ namespace Game
             
             GameScene.PopupGameOverAnimationComponent.Initialize(gameModel, GameScene);
             GameScene.PopupPauseComponent.Initialize(gameModel, GameScene);
-           
+            
+            GameScene.PlayingButtonComponent.Initialize(gameModel, GameScene);
             GameScene.YesButtonGameOverComponent.Initialize(gameModel, GameScene);
             GameScene.NoButtonGameOverComponent.Initialize(gameModel, GameScene);
             GameScene.PauseButtonComponent.Initialize(gameModel, GameScene);
