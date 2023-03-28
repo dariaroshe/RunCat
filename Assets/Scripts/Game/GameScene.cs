@@ -32,7 +32,7 @@ namespace Game
         public PopupGameOverAnimationComponent PopupGameOverAnimationComponent;
         public PopupPauseComponent PopupPauseComponent;
 
-        public PlayingButtonComponent PlayingButtonComponent;
+        public PlayingButtonComponent[] PlayingButtonComponent;
         public YesButtonGameOverComponent YesButtonGameOverComponent;
         public NoButtonGameOverComponent NoButtonGameOverComponent;
         public PauseButtonComponent PauseButtonComponent;

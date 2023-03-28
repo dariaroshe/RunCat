@@ -16,7 +16,9 @@ namespace Buttons
         {
             _gameModel = gameModel;
             _gameScene = gameScene;
-
+           
+            UpdateInteractable();
+            
             _gameModel.GameState.Changed += OnGameStateChanged;
         }
 
@@ -26,6 +28,11 @@ namespace Buttons
         }
 
         private void OnGameStateChanged()
+        {
+            UpdateInteractable();
+        }
+
+        private void UpdateInteractable()
         {
             var gameState = _gameModel.GameState.Value;
 
