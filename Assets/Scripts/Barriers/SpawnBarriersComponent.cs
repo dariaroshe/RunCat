@@ -42,9 +42,9 @@ namespace Barriers
                     
                     barrierMove.Initialize(_gameModel, _gameScene);
                     barrierDeadTrigger.Initialize(_gameModel, _gameScene);
+                    
+                    yield return new WaitForSeconds(4f);
                 }
-
-                yield return new WaitForSeconds(4f);
             }
         }
     }

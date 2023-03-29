@@ -1,3 +1,4 @@
+using System;
 using Game;
 using UnityEngine;
 
@@ -14,9 +15,16 @@ namespace Player
         {
             _gameModel = gameModel;
             _gameScene = gameScene;
+
+            _gameModel.GameState.Changed += OnGameStateChanged;
         }
-        
-        private void Update()
+
+        private void OnDestroy()
+        {
+            _gameModel.GameState.Changed -= OnGameStateChanged;
+        }
+
+        private void OnGameStateChanged()
         {
             var playerAnimator = _gameScene.PlayerAnimator;
             var gameState = _gameModel.GameState;
@@ -24,6 +32,10 @@ namespace Player
             if (gameState.Value == GameState.Playing)
             {
                 playerAnimator.SetBool(IsMoving, true);
+            }
+            else
+            {
+                playerAnimator.SetBool(IsMoving, false);
             }
         }
     }
