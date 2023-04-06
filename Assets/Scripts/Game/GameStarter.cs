@@ -17,9 +17,6 @@ namespace Game
             
             GameScene.RunPlayerComponent.Initialize(gameModel, GameScene);
             GameScene.JumpPlayerComponent.Initialize(gameModel, GameScene);
-            
-            GameScene.MovePlatformComponent.Initialize(gameModel, GameScene);
-            GameScene.TeleportPlatformComponent.Initialize(gameModel, GameScene);
 
             for (int i = 0; i < GameScene.MoveBarriersComponent.Length; i++)
             {

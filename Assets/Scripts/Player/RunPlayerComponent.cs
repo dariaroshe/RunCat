@@ -32,10 +32,11 @@ namespace Player
             if (gameState.Value == GameState.Playing)
             {
                 playerAnimator.SetBool(IsMoving, true);
+                playerAnimator.speed = 1f;
             }
             else
             {
-                playerAnimator.SetBool(IsMoving, false);
+                playerAnimator.speed = 0f;
             }
         }
     }

@@ -45,6 +45,8 @@ namespace Barriers
                     
                     yield return new WaitForSeconds(4f);
                 }
+                
+                yield return null;
             }
         }
     }

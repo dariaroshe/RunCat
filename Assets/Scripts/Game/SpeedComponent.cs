@@ -23,7 +23,7 @@ namespace Game
 
             if (gameState.Value == GameState.Playing)
             {
-                _gameModel.Speed += Time.deltaTime * acceleration;
+                _gameModel.Speed = Mathf.Clamp(_gameModel.Speed + Time.deltaTime * acceleration, 0, _gameScene.MaxSpeed);
             }
         }
     }

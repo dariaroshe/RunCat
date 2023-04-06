@@ -1,7 +1,6 @@
 using Background;
 using Barriers;
 using Buttons;
-using Platforms;
 using Player;
 using Points;
 using Popups;
@@ -17,9 +16,6 @@ namespace Game
         
         public RunPlayerComponent RunPlayerComponent;
         public JumpPlayerComponent JumpPlayerComponent;
-
-        public MovePlatformComponent MovePlatformComponent;
-        public TeleportPlatformComponent TeleportPlatformComponent;
 
         public MoveBarriersComponent[] MoveBarriersComponent;
         public SpawnBarriersComponent SpawnBarriersComponent;
@@ -49,10 +45,9 @@ namespace Game
         public GameObject[] Items;
 
         public float StartSpeed;
+        public float MaxSpeed;
         public float Acceleration;
 
         public Animator PlayerAnimator;
-
-        public float _a = 1f;
     }
 }
