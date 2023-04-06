@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Player
 {
-    public class TriggerDeadPlayerComponent : GameComponent
+    public class DeadPlayerComponent : GameComponent
     {
         private GameModel _gameModel;
         private GameScene _gameScene;
@@ -13,12 +13,25 @@ namespace Player
         {
             _gameModel = gameModel;
             _gameScene = gameScene;
+
+            _gameModel.Health.Changed += OnHealthChanged;
         }
-        
+
+        private void OnDestroy()
+        {
+            _gameModel.Health.Changed -= OnHealthChanged;
+        }
+
+        private void OnHealthChanged()
+        {
+            if (_gameModel.Health.Value == 0)
+            {
+                // gameState.Value = GameState.GameOver;
+            }
+        }
+
         private void OnTriggerEnter2D(Collider2D other)
         {
-            var gameState = _gameModel.GameState;
-            
             if (other.TryGetComponent<RunPlayerComponent>(out var cat))
             {
                // gameState.Value = GameState.GameOver;

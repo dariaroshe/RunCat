@@ -11,18 +11,16 @@ namespace Game
         private void Start()
         {
             var gameModel = new GameModel();
+
+            gameModel.Health.Value = GameScene.StartHealth;
             
             GameScene.StartGameComponent.Initialize(gameModel, GameScene);
             GameScene.StartGameTextComponent.Initialize(gameModel, GameScene);
             
             GameScene.RunPlayerComponent.Initialize(gameModel, GameScene);
             GameScene.JumpPlayerComponent.Initialize(gameModel, GameScene);
+            GameScene.DeadPlayerComponent.Initialize(gameModel, GameScene);
 
-            for (int i = 0; i < GameScene.MoveBarriersComponent.Length; i++)
-            {
-                GameScene.MoveBarriersComponent[i].Initialize(gameModel, GameScene);
-            }
-           
             GameScene.SpawnBarriersComponent.Initialize(gameModel, GameScene);
             
             for (int i = 0; i < GameScene.MoveBackgroundComponent.Length; i++)
@@ -45,6 +43,9 @@ namespace Game
             GameScene.NoButtonGameOverComponent.Initialize(gameModel, GameScene);
             GameScene.PauseButtonComponent.Initialize(gameModel, GameScene);
             GameScene.ContinueButtonPauseComponent.Initialize(gameModel, GameScene);
+            
+            GameScene.ImageHealthBarComponent.Initialize(gameModel, GameScene);
+            GameScene.SpawnAdditionalHealthComponent.Initialize(gameModel, GameScene);
             
             GameScene.PointsComponent.Initialize(gameModel, GameScene);
             GameScene.PointsTextComponent.Initialize(gameModel, GameScene);

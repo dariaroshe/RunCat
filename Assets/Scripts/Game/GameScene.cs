@@ -1,6 +1,7 @@
 using Background;
 using Barriers;
 using Buttons;
+using HealthBar;
 using Player;
 using Points;
 using Popups;
@@ -16,8 +17,8 @@ namespace Game
         
         public RunPlayerComponent RunPlayerComponent;
         public JumpPlayerComponent JumpPlayerComponent;
-
-        public MoveBarriersComponent[] MoveBarriersComponent;
+        public DeadPlayerComponent DeadPlayerComponent;
+        
         public SpawnBarriersComponent SpawnBarriersComponent;
 
         public MoveBackgroundComponent[] MoveBackgroundComponent;
@@ -34,6 +35,9 @@ namespace Game
         public PauseButtonComponent PauseButtonComponent;
         public ContinueButtonPauseComponent ContinueButtonPauseComponent;
 
+        public ImageHealthBarComponent ImageHealthBarComponent;
+        public SpawnAdditionalHealthComponent SpawnAdditionalHealthComponent;
+
         public PointsComponent PointsComponent;
         public PointsTextComponent PointsTextComponent;
 
@@ -47,6 +51,8 @@ namespace Game
         public float StartSpeed;
         public float MaxSpeed;
         public float Acceleration;
+
+        public int StartHealth;
 
         public Animator PlayerAnimator;
     }

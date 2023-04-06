@@ -38,10 +38,10 @@ namespace Barriers
                         Quaternion.identity);
 
                     var barrierMove = newBarrier.GetComponent<MoveBarriersComponent>();
-                    var barrierDeadTrigger = newBarrier.GetComponent<TriggerDeadPlayerComponent>();
+                    var triggerDamageComponent = newBarrier.GetComponent<TriggerDamageComponent>();
                     
                     barrierMove.Initialize(_gameModel, _gameScene);
-                    barrierDeadTrigger.Initialize(_gameModel, _gameScene);
+                    triggerDamageComponent.Initialize(_gameModel, _gameScene);
                     
                     yield return new WaitForSeconds(4f);
                 }
