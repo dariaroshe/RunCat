@@ -18,24 +18,18 @@ namespace HealthBar
             _gameModel = gameModel;
             _gameScene = gameScene;
 
-            _gameModel.Health.Changed += OnHealthChanged;
+            StartCoroutine(SpawnAdditionalHealth());
         }
 
-        private void OnDestroy()
+        private IEnumerator SpawnAdditionalHealth()
         {
-            _gameModel.Health.Changed += OnHealthChanged;
-        }
-
-        private void OnHealthChanged()
-        {
-            var gameState = _gameModel.GameState.Value;
-            var health = _gameModel.Health.Value;
-
             while (true)
             {
-                if (health == 1 && gameState == GameState.Playing)
+                var gameState = _gameModel.GameState.Value;
+
+                if (_gameModel.Health.Value == 1 && gameState == GameState.Playing)
                 {
-                    StartCoroutine(WaitSeconds());
+                    yield return new WaitForSeconds(5);
                     
                     var newAdditionalHealth = Instantiate(_additionalHealth, _pointSpawn.transform.position,
                         Quaternion.identity);
@@ -48,12 +42,9 @@ namespace HealthBar
                     additionalHealthTrigger.Initialize(_gameModel, _gameScene);
                     additionalHealthAnimation.Initialize(_gameModel, _gameScene);
                 }
-            }
-        }
 
-        private IEnumerator WaitSeconds()
-        {
-            yield return new WaitForSeconds(60);
+                yield return null;
+            }
         }
     }
 }

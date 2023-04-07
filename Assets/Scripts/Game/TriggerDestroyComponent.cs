@@ -1,10 +1,8 @@
-using System;
-using Game;
 using UnityEngine;
 
-namespace Barriers
+namespace Game
 {
-    public class TriggerDestroyBarriersComponent : MonoBehaviour
+    public class TriggerDestroyComponent : MonoBehaviour
     {
         private void OnTriggerEnter2D(Collider2D other)
         {

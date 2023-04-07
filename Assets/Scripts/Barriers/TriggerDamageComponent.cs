@@ -15,7 +15,7 @@ namespace Barriers
             _gameScene = gameScene;
         }
 
-        private void OnTriggerEnter(Collider other)
+        private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.TryGetComponent<RunPlayerComponent>(out var barrier))
             {
