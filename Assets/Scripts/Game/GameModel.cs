@@ -9,7 +9,7 @@ namespace Game
         
         public readonly Field<int> Points = new Field<int>();
         public readonly Field<int> Countdown = new Field<int>(3);
-        public readonly Field<int> Health = new Field<int>();
+        public readonly HealthField Health = new HealthField();
 
         public float Speed;
     }

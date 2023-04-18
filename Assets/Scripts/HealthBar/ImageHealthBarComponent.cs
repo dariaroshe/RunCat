@@ -27,7 +27,7 @@ namespace HealthBar
             _gameModel.Health.Changed -= OnHealthChanged;
         }
 
-        private void OnHealthChanged()
+        private void OnHealthChanged(int old, int current)
         {
             UpdateHealthBar();
         }

@@ -22,7 +22,7 @@ namespace Player
             _gameModel.Health.Changed -= OnHealthChanged;
         }
 
-        private void OnHealthChanged()
+        private void OnHealthChanged(int old, int current)
         {
             if (_gameModel.Health.Value == 0)
             {

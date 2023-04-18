@@ -22,9 +22,11 @@ namespace Game
         public SpawnBarriersComponent SpawnBarriersComponent;
 
         public MoveBackgroundComponent[] MoveBackgroundComponent;
+        public BackgroundDamageAnimationComponent BackgroundDamageAnimationComponent;
 
         public PlayerDeadAnimationComponent PlayerDeadAnimationComponent;
         public PlayerJumpAnimationComponent PlayerJumpAnimationComponent;
+        public PlayerDamageAnimationComponent PlayerDamageAnimationComponent;
 
         public PopupGameOverAnimationComponent PopupGameOverAnimationComponent;
         public PopupPauseComponent PopupPauseComponent;
