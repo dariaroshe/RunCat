@@ -11,7 +11,7 @@ namespace GameCurrency
         private GameModel _gameModel;
         private GameScene _gameScene;
 
-        [SerializeField] private Transform _pointSpawn;
+        [SerializeField] private Transform[] _pointSpawn;
         [SerializeField] private GameObject _gameCurrency;
 
         public override void Initialize(GameModel gameModel, GameScene gameScene)
@@ -27,23 +27,27 @@ namespace GameCurrency
             while (true)
             {
                 var gameState = _gameModel.GameState.Value;
-
-                if (gameState == GameState.Playing)
+                var randomSpawnPoint = Random.Range(0, _pointSpawn.Length); 
+                
+                for (int i = 0; i < _pointSpawn.Length; i++)
                 {
-                    yield return new WaitForSeconds(5);
-                    
-                    var newGameCurrency = Instantiate(_gameCurrency, _pointSpawn.transform.position,
-                        Quaternion.identity);
+                    if (gameState == GameState.Playing)
+                    {
+                        yield return new WaitForSeconds(1);
 
-                    var moveGameCurrency = newGameCurrency.GetComponent<MoveGameCurrencyComponent>();
-                    var triggerGameCurrency = newGameCurrency.GetComponent<TriggerGameCurrencyComponent>();
-                    var animationGameCurrency = newGameCurrency.GetComponent<GameCurrencyAnimationComponent>();
+                        var newGameCurrency = Instantiate(_gameCurrency, _pointSpawn[randomSpawnPoint].transform.position,
+                            Quaternion.identity);
 
-                    moveGameCurrency.Initialize(_gameModel, _gameScene);
-                    triggerGameCurrency.Initialize(_gameModel, _gameScene);
-                    animationGameCurrency.Initialize(_gameModel, _gameScene);
+                        var moveGameCurrency = newGameCurrency.GetComponent<MoveGameCurrencyComponent>();
+                        var triggerGameCurrency = newGameCurrency.GetComponent<TriggerGameCurrencyComponent>();
+                        var animationGameCurrency = newGameCurrency.GetComponent<GameCurrencyAnimationComponent>();
+
+                        moveGameCurrency.Initialize(_gameModel, _gameScene);
+                        triggerGameCurrency.Initialize(_gameModel, _gameScene);
+                        animationGameCurrency.Initialize(_gameModel, _gameScene);
+                    }
                 }
-
+                
                 yield return null;
             }
         }
