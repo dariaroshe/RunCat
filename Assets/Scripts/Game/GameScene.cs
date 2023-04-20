@@ -1,6 +1,7 @@
 using Background;
 using Barriers;
 using Buttons;
+using GameCurrency;
 using HealthBar;
 using Player;
 using Points;
@@ -42,6 +43,9 @@ namespace Game
 
         public PointsComponent PointsComponent;
         public PointsTextComponent PointsTextComponent;
+
+        public SpawnGameCurrencyComponent SpawnGameCurrencyComponent;
+        public GameCurrencyTextComponent GameCurrencyTextComponent;
 
         public SpeedComponent SpeedComponent;
 
