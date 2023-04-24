@@ -335,6 +335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pointSpawn: {fileID: 1026357379}
+  _spawnPeriod: 4
 --- !u!4 &157984973
 Transform:
   m_ObjectHideFlags: 0
@@ -369,6 +370,7 @@ MonoBehaviour:
   - {fileID: 187197883}
   - {fileID: 1015053111}
   _gameCurrency: {fileID: 377529985619401888, guid: 78f6fc5c70f9a2245b2378b876c294a5, type: 3}
+  _spawnPeriod: 2
 --- !u!1 &187197882
 GameObject:
   m_ObjectHideFlags: 0

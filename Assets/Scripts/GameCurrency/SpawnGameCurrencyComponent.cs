@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Game;
 using HealthBar;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace GameCurrency
 {
@@ -13,42 +15,47 @@ namespace GameCurrency
 
         [SerializeField] private Transform[] _pointSpawn;
         [SerializeField] private GameObject _gameCurrency;
+        
+        [SerializeField] private float _spawnPeriod;
+        private float _timer;
 
         public override void Initialize(GameModel gameModel, GameScene gameScene)
         {
             _gameModel = gameModel;
             _gameScene = gameScene;
-
-            StartCoroutine(SpawnAdditionalHealth());
         }
 
-        private IEnumerator SpawnAdditionalHealth()
+        private void Update()
         {
-            while (true)
+            var gameState = _gameModel.GameState.Value;
+
+            if (gameState != GameState.Playing)
             {
-                var gameState = _gameModel.GameState.Value;
-                var randomSpawnPoint = Random.Range(0, _pointSpawn.Length); 
+                return;
+            }
+            
+            if (_timer > _spawnPeriod)
+            {
+                var randomSpawnPoint = Random.Range(0, _pointSpawn.Length);
+
                 
-                for (int i = 0; i < _pointSpawn.Length; i++)
-                {
-                    if (gameState == GameState.Playing)
-                    {
-                        yield return new WaitForSeconds(1);
+                    var newGameCurrency = Instantiate(_gameCurrency, _pointSpawn[randomSpawnPoint].transform.position,
+                        Quaternion.identity);
 
-                        var newGameCurrency = Instantiate(_gameCurrency, _pointSpawn[randomSpawnPoint].transform.position,
-                            Quaternion.identity);
+                    var moveGameCurrency = newGameCurrency.GetComponent<MoveGameCurrencyComponent>();
+                    var triggerGameCurrency = newGameCurrency.GetComponent<TriggerGameCurrencyComponent>();
+                    var animationGameCurrency = newGameCurrency.GetComponent<GameCurrencyAnimationComponent>();
 
-                        var moveGameCurrency = newGameCurrency.GetComponent<MoveGameCurrencyComponent>();
-                        var triggerGameCurrency = newGameCurrency.GetComponent<TriggerGameCurrencyComponent>();
-                        var animationGameCurrency = newGameCurrency.GetComponent<GameCurrencyAnimationComponent>();
-
-                        moveGameCurrency.Initialize(_gameModel, _gameScene);
-                        triggerGameCurrency.Initialize(_gameModel, _gameScene);
-                        animationGameCurrency.Initialize(_gameModel, _gameScene);
-                    }
-                }
+                    moveGameCurrency.Initialize(_gameModel, _gameScene);
+                    triggerGameCurrency.Initialize(_gameModel, _gameScene);
+                    animationGameCurrency.Initialize(_gameModel, _gameScene);
                 
-                yield return null;
+
+                _timer = 0f;
+            }
+            else
+            {
+                _timer += Time.deltaTime;
             }
         }
     }

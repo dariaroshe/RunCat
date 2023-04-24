@@ -13,7 +13,7 @@ namespace Game
             var gameModel = new GameModel();
 
             gameModel.Health.Value = GameScene.StartHealth;
-            
+
             GameScene.StartGameComponent.Initialize(gameModel, GameScene);
             GameScene.StartGameTextComponent.Initialize(gameModel, GameScene);
             

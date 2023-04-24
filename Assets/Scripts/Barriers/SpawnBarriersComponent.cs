@@ -15,38 +15,43 @@ namespace Barriers
         private GameModel _gameModel;
         private GameScene _gameScene;
 
+        [SerializeField] private float _spawnPeriod;
+        private float _timer;
+
         public override void Initialize(GameModel gameModel, GameScene gameScene)
         {
             _gameModel = gameModel;
             _gameScene = gameScene;
-
-            StartCoroutine(SpawnBarriers());
         }
 
-        private IEnumerator SpawnBarriers()
+        private void Update()
         {
-            while (true)
-            {
-                var gameState = _gameModel.GameState;
-                var barrier = _gameScene.Barriers;
+            var gameState = _gameModel.GameState.Value;
 
+            if (gameState != GameState.Playing)
+            {
+                return;
+            }
+            
+            if (_timer > _spawnPeriod)
+            {
+                var barrier = _gameScene.Barriers;
                 var randomIndexBarrier = Random.Range(0, barrier.Length);
 
-                if (gameState.Value == GameState.Playing)
-                {
-                    var newBarrier = Instantiate(barrier[randomIndexBarrier], _pointSpawn.transform.position,
-                        Quaternion.identity);
+                var newBarrier = Instantiate(barrier[randomIndexBarrier], _pointSpawn.transform.position,
+                    Quaternion.identity);
 
-                    var barrierMove = newBarrier.GetComponent<MoveBarriersComponent>();
-                    var triggerDamageComponent = newBarrier.GetComponent<TriggerDamageComponent>();
+                var barrierMove = newBarrier.GetComponent<MoveBarriersComponent>();
+                var triggerDamageComponent = newBarrier.GetComponent<TriggerDamageComponent>();
                     
-                    barrierMove.Initialize(_gameModel, _gameScene);
-                    triggerDamageComponent.Initialize(_gameModel, _gameScene);
-                    
-                    yield return new WaitForSeconds(4f);
-                }
+                barrierMove.Initialize(_gameModel, _gameScene);
+                triggerDamageComponent.Initialize(_gameModel, _gameScene);
                 
-                yield return null;
+                _timer = 0f;
+            }
+            else
+            {
+                _timer += Time.deltaTime;
             }
         }
     }
