@@ -26,7 +26,7 @@ namespace Player
         {
             if (_gameModel.Health.Value == 0)
             {
-                // gameState.Value = GameState.GameOver;
+                _gameModel.GameState.Value = GameState.GameOver;
             }
         }
 
@@ -34,7 +34,7 @@ namespace Player
         {
             if (other.TryGetComponent<RunPlayerComponent>(out var cat))
             {
-               // gameState.Value = GameState.GameOver;
+               _gameModel.GameState.Value = GameState.GameOver;
             }
         }
     }

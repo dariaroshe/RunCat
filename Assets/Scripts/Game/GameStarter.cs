@@ -56,6 +56,8 @@ namespace Game
             GameScene.SpawnGameCurrencyComponent.Initialize(gameModel, GameScene);
             GameScene.GameCurrencyTextComponent.Initialize(gameModel, GameScene);
             
+            GameScene.SpawnAccelerationComponent.Initialize(gameModel, GameScene);
+            
             GameScene.SpeedComponent.Initialize(gameModel, GameScene);
         }
     }

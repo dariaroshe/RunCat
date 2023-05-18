@@ -1,21 +1,17 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using Game;
-using HealthBar;
+using GameCurrency;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
-namespace GameCurrency
+namespace AccelerationPlayer
 {
-    public class SpawnGameCurrencyComponent : GameComponent
+    public class SpawnAccelerationComponent : GameComponent
     {
         private GameModel _gameModel;
         private GameScene _gameScene;
 
         [SerializeField] private Transform[] _pointSpawn;
-        [SerializeField] private GameObject _gameCurrency;
-
+        [SerializeField] private GameObject _acceleration;
+        
         [SerializeField] private float _spawnPeriod;
         private float _timer;
 
@@ -33,21 +29,21 @@ namespace GameCurrency
             {
                 return;
             }
-
+            
             if (_timer > _spawnPeriod)
             {
                 var randomSpawnPoint = Random.Range(0, _pointSpawn.Length);
-
-                var newGameCurrency = Instantiate(_gameCurrency, _pointSpawn[randomSpawnPoint].transform.position,
+                
+                var newGameCurrency = Instantiate(_acceleration, _pointSpawn[randomSpawnPoint].transform.position,
                     Quaternion.identity);
 
-                var moveGameCurrency = newGameCurrency.GetComponent<MoveGameCurrencyComponent>();
-                var triggerGameCurrency = newGameCurrency.GetComponent<TriggerGameCurrencyComponent>();
-                var animationGameCurrency = newGameCurrency.GetComponent<GameCurrencyAnimationComponent>();
+                var moveAcceleration = newGameCurrency.GetComponent<MoveAccelerationComponent>();
+                var triggerAcceleration = newGameCurrency.GetComponent<TriggerAccelerationComponent>();
+                var animationAcceleration = newGameCurrency.GetComponent<AccelerationAnimationComponent>();
 
-                moveGameCurrency.Initialize(_gameModel, _gameScene);
-                triggerGameCurrency.Initialize(_gameModel, _gameScene);
-                animationGameCurrency.Initialize(_gameModel, _gameScene);
+                moveAcceleration.Initialize(_gameModel, _gameScene);
+                triggerAcceleration.Initialize(_gameModel, _gameScene);
+                animationAcceleration.Initialize(_gameModel, _gameScene);
 
                 _timer = 0f;
             }

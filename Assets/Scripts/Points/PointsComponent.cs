@@ -26,7 +26,7 @@ namespace Points
             {
                 if (gameState.Value == GameState.Playing)
                 {
-                    points.Value++;
+                    points.Value += Mathf.RoundToInt(_gameModel.Speed / _gameScene.StartSpeed);
                 }
 
                 yield return new WaitForSeconds(1);

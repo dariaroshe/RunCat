@@ -1,3 +1,4 @@
+using AccelerationPlayer;
 using Background;
 using Barriers;
 using Buttons;
@@ -46,6 +47,8 @@ namespace Game
 
         public SpawnGameCurrencyComponent SpawnGameCurrencyComponent;
         public GameCurrencyTextComponent GameCurrencyTextComponent;
+
+        public SpawnAccelerationComponent SpawnAccelerationComponent;
 
         public SpeedComponent SpeedComponent;
 
