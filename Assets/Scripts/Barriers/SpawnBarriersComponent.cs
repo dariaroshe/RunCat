@@ -15,8 +15,8 @@ namespace Barriers
         private GameModel _gameModel;
         private GameScene _gameScene;
 
-        [SerializeField] private float _spawnPeriod;
-        private float _timer;
+        [SerializeField] private float _distanceSpawnPeriod;
+        private float _distance;
 
         public override void Initialize(GameModel gameModel, GameScene gameScene)
         {
@@ -33,7 +33,7 @@ namespace Barriers
                 return;
             }
             
-            if (_timer > _spawnPeriod)
+            if (_distance > _distanceSpawnPeriod)
             {
                 var barrier = _gameScene.Barriers;
                 var randomIndexBarrier = Random.Range(0, barrier.Length);
@@ -47,11 +47,11 @@ namespace Barriers
                 barrierMove.Initialize(_gameModel, _gameScene);
                 triggerDamageComponent.Initialize(_gameModel, _gameScene);
                 
-                _timer = 0f;
+                _distance = 0f;
             }
             else
             {
-                _timer += Time.deltaTime;
+                _distance += Time.deltaTime * _gameModel.Speed;
             }
         }
     }

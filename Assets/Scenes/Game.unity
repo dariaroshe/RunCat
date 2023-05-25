@@ -336,7 +336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pointSpawn: {fileID: 1026357379}
-  _spawnPeriod: 4
+  _distanceSpawnPeriod: 20
 --- !u!4 &157984973
 Transform:
   m_ObjectHideFlags: 0
