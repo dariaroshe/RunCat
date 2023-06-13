@@ -17,6 +17,8 @@ namespace Menu
             }
             
             MenuScene.StartButtonComponent.Initialize(menuModel, MenuScene);
+            
+            MenuScene.MaxPointsTextComponent.Initialize(menuModel, MenuScene);
         }
     }
 }

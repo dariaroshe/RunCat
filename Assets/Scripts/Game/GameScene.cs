@@ -7,6 +7,7 @@ using HealthBar;
 using Player;
 using Points;
 using Popups;
+using SaveGame;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -51,6 +52,8 @@ namespace Game
         public SpawnAccelerationComponent SpawnAccelerationComponent;
 
         public SpeedComponent SpeedComponent;
+
+        public SavePointsComponent SavePointsComponent;
 
         public Transform[] Platforms;
 

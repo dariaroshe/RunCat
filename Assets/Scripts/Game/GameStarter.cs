@@ -59,6 +59,8 @@ namespace Game
             GameScene.SpawnAccelerationComponent.Initialize(gameModel, GameScene);
             
             GameScene.SpeedComponent.Initialize(gameModel, GameScene);
+            
+            GameScene.SavePointsComponent.Initialize(gameModel, GameScene);
         }
     }
 }

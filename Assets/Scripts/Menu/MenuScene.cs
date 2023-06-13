@@ -7,6 +7,8 @@ namespace Menu
         public MenuMoveBackgroundComponent[] MenuMoveBackgroundComponent;
 
         public StartButtonComponent StartButtonComponent;
+
+        public MaxPointsTextComponent MaxPointsTextComponent;
         
         public float BackgroundSpeed;
     }
