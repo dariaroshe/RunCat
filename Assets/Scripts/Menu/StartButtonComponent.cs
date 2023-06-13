@@ -3,19 +3,19 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace Buttons
+namespace Menu
 {
-    public class StartButtonComponent : GameComponent
+    public class StartButtonComponent : MenuComponent
     {
-        private GameModel _gameModel;
-        private GameScene _gameScene;
+        private MenuModel _menuModel;
+        private MenuScene _menuScene;
 
         [SerializeField] private Button _button;
 
-        public override void Initialize(GameModel gameModel, GameScene gameScene)
+        public override void Initialize(MenuModel menuModel, MenuScene menuScene)
         {
-            _gameModel = gameModel;
-            _gameScene = gameScene;
+            _menuModel = menuModel;
+            _menuScene = menuScene;
 
             _button.onClick.AddListener(OnClickButton);
         }

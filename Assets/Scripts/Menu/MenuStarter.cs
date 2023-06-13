@@ -15,6 +15,8 @@ namespace Menu
             {
                 MenuScene.MenuMoveBackgroundComponent[i].Initialize(menuModel, MenuScene);
             }
+            
+            MenuScene.StartButtonComponent.Initialize(menuModel, MenuScene);
         }
     }
 }
