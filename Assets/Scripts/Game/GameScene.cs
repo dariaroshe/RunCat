@@ -33,12 +33,16 @@ namespace Game
 
         public PopupGameOverAnimationComponent PopupGameOverAnimationComponent;
         public PopupPauseComponent PopupPauseComponent;
+        public PopupExitComponent PopupExitComponent;
 
         public PlayingButtonComponent[] PlayingButtonComponent;
         public YesButtonGameOverComponent YesButtonGameOverComponent;
         public NoButtonGameOverComponent NoButtonGameOverComponent;
         public PauseButtonComponent PauseButtonComponent;
         public ContinueButtonPauseComponent ContinueButtonPauseComponent;
+        public ExitButtonComponent ExitButtonComponent;
+        public NoButtonExitComponent NoButtonExitComponent;
+        public YesButtonExitComponent YesButtonExitComponent;
 
         public ImageHealthBarComponent ImageHealthBarComponent;
         public SpawnAdditionalHealthComponent SpawnAdditionalHealthComponent;

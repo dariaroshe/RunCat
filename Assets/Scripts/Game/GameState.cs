@@ -5,6 +5,7 @@ namespace Game
         Start,
         Playing,
         Pause,
+        Exit,
         GameOver
     }
 }

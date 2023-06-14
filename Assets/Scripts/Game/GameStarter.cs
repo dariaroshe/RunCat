@@ -36,6 +36,7 @@ namespace Game
             
             GameScene.PopupGameOverAnimationComponent.Initialize(gameModel, GameScene);
             GameScene.PopupPauseComponent.Initialize(gameModel, GameScene);
+            GameScene.PopupExitComponent.Initialize(gameModel, GameScene);
 
             for (int i = 0; i < GameScene.PlayingButtonComponent.Length; i++)
             {
@@ -46,6 +47,9 @@ namespace Game
             GameScene.NoButtonGameOverComponent.Initialize(gameModel, GameScene);
             GameScene.PauseButtonComponent.Initialize(gameModel, GameScene);
             GameScene.ContinueButtonPauseComponent.Initialize(gameModel, GameScene);
+            GameScene.ExitButtonComponent.Initialize(gameModel, GameScene);
+            GameScene.NoButtonExitComponent.Initialize(gameModel, GameScene);
+            GameScene.YesButtonExitComponent.Initialize(gameModel, GameScene);
             
             GameScene.ImageHealthBarComponent.Initialize(gameModel, GameScene);
             GameScene.SpawnAdditionalHealthComponent.Initialize(gameModel, GameScene);
