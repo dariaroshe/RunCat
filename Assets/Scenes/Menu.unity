@@ -455,6 +455,7 @@ GameObject:
   - component: {fileID: 555766800}
   - component: {fileID: 555766799}
   - component: {fileID: 555766798}
+  - component: {fileID: 555766801}
   m_Layer: 5
   m_Name: Button_shop
   m_TagString: Untagged
@@ -564,6 +565,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555766796}
   m_CullTransparentMesh: 1
+--- !u!114 &555766801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555766796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da24a70b2e1c411292229136cdbdfd9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 555766798}
 --- !u!1 &803613635
 GameObject:
   m_ObjectHideFlags: 0
@@ -1607,6 +1621,7 @@ MonoBehaviour:
   - {fileID: 1501779315}
   - {fileID: 90175247}
   StartButtonComponent: {fileID: 1037018318}
+  ShopButtonComponent: {fileID: 555766801}
   MaxPointsTextComponent: {fileID: 1197688330}
   BackgroundSpeed: 4
 --- !u!1 &1672734909
