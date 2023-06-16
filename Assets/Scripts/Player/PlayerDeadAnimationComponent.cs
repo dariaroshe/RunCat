@@ -11,6 +11,8 @@ namespace Player
         private GameModel _gameModel;
         private GameScene _gameScene;
 
+        [SerializeField] private Animator _playerAnimator;
+
         public override void Initialize(GameModel gameModel, GameScene gameScene)
         {
             _gameModel = gameModel;
@@ -26,12 +28,11 @@ namespace Player
 
         private void OnGameStateChanged()
         {
-            var playerAnimator = _gameScene.PlayerAnimator;
             var gameState = _gameModel.GameState;
 
             if (gameState.Value == GameState.GameOver)
             {
-                playerAnimator.SetTrigger(Dead);
+                _playerAnimator.SetTrigger(Dead);
             }
         }
 

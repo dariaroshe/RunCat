@@ -10,6 +10,7 @@ namespace Player
         private GameScene _gameScene;
 
         [SerializeField] private Rigidbody2D _rigidbody2D;
+        [SerializeField] private Animator _playerAnimator;
         
         private static readonly int JumpUp = Animator.StringToHash("JumpUp");
         private static readonly int JumpDown = Animator.StringToHash("JumpDown");
@@ -23,24 +24,23 @@ namespace Player
         
         private void Update()
         {
-            var playerAnimator = _gameScene.PlayerAnimator;
             var gameState = _gameModel.GameState;
             
             if (gameState.Value == GameState.Playing)
             {
                 if (_rigidbody2D.velocity.y > 0.1f)
                 {
-                    playerAnimator.SetTrigger(JumpUp);
-                    playerAnimator.SetBool(IsGrounded, false);
+                    _playerAnimator.SetTrigger(JumpUp);
+                    _playerAnimator.SetBool(IsGrounded, false);
                 }
                 else if (_rigidbody2D.velocity.y < -0.1f)
                 {
-                    playerAnimator.SetTrigger(JumpDown);
-                    playerAnimator.SetBool(IsGrounded, false);
+                    _playerAnimator.SetTrigger(JumpDown);
+                    _playerAnimator.SetBool(IsGrounded, false);
                 }
                 else
                 {
-                    playerAnimator.SetBool(IsGrounded, true);
+                    _playerAnimator.SetBool(IsGrounded, true);
                 }
             }
         }

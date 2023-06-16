@@ -13,13 +13,13 @@ namespace Game
             var gameModel = new GameModel();
 
             gameModel.Health.Value = GameScene.StartHealth;
-
+            
+            GameScene.PlayerSpawnComponent.Initialize(gameModel, GameScene);
+            
+            GameScene.DeadPlayerComponent.Initialize(gameModel, GameScene);
+            
             GameScene.StartGameComponent.Initialize(gameModel, GameScene);
             GameScene.StartGameTextComponent.Initialize(gameModel, GameScene);
-            
-            GameScene.RunPlayerComponent.Initialize(gameModel, GameScene);
-            GameScene.JumpPlayerComponent.Initialize(gameModel, GameScene);
-            GameScene.DeadPlayerComponent.Initialize(gameModel, GameScene);
 
             GameScene.SpawnBarriersComponent.Initialize(gameModel, GameScene);
             
@@ -29,10 +29,6 @@ namespace Game
             }
             
             GameScene.BackgroundDamageAnimationComponent.Initialize(gameModel, GameScene);
-            
-            GameScene.PlayerDeadAnimationComponent.Initialize(gameModel, GameScene);
-            GameScene.PlayerJumpAnimationComponent.Initialize(gameModel, GameScene);
-            GameScene.PlayerDamageAnimationComponent.Initialize(gameModel, GameScene);
             
             GameScene.PopupGameOverAnimationComponent.Initialize(gameModel, GameScene);
             GameScene.PopupPauseComponent.Initialize(gameModel, GameScene);

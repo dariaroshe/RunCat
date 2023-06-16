@@ -11,9 +11,6 @@ namespace Player
         private GameScene _gameScene;
 
         [SerializeField] private SpriteRenderer _sprite;
-        
-        [SerializeField] private Animator _damageAnimator;
-        private static readonly int Show = Animator.StringToHash("Show");
 
         public override void Initialize(GameModel gameModel, GameScene gameScene)
         {

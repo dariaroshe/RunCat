@@ -9,6 +9,8 @@ namespace Player
         private GameModel _gameModel;
         private GameScene _gameScene;
 
+        [SerializeField] private Animator _playerAnimator;
+
         private static readonly int IsMoving = Animator.StringToHash("IsMoving");
 
         public override void Initialize(GameModel gameModel, GameScene gameScene)
@@ -26,17 +28,16 @@ namespace Player
 
         private void OnGameStateChanged()
         {
-            var playerAnimator = _gameScene.PlayerAnimator;
             var gameState = _gameModel.GameState;
             
             if (gameState.Value == GameState.Playing)
             {
-                playerAnimator.SetBool(IsMoving, true);
-                playerAnimator.speed = 1f;
+                _playerAnimator.SetBool(IsMoving, true);
+                _playerAnimator.speed = 1f;
             }
             else
             {
-                playerAnimator.speed = 0f;
+                _playerAnimator.speed = 0f;
             }
         }
     }

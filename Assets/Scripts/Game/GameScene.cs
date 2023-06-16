@@ -8,28 +8,26 @@ using Player;
 using Points;
 using Popups;
 using SaveGame;
+using Skins;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 namespace Game
 {
     public class GameScene : MonoBehaviour
     {
+        public SkinsCollectionInfo SkinsCollectionInfo;
+
+        public PlayerSpawnComponent PlayerSpawnComponent;
+        
+        public DeadPlayerComponent DeadPlayerComponent;
+
         public StartGameComponent StartGameComponent;
         public StartGameTextComponent StartGameTextComponent;
-        
-        public RunPlayerComponent RunPlayerComponent;
-        public JumpPlayerComponent JumpPlayerComponent;
-        public DeadPlayerComponent DeadPlayerComponent;
-        
+
         public SpawnBarriersComponent SpawnBarriersComponent;
 
         public MoveBackgroundComponent[] MoveBackgroundComponent;
         public BackgroundDamageAnimationComponent BackgroundDamageAnimationComponent;
-
-        public PlayerDeadAnimationComponent PlayerDeadAnimationComponent;
-        public PlayerJumpAnimationComponent PlayerJumpAnimationComponent;
-        public PlayerDamageAnimationComponent PlayerDamageAnimationComponent;
 
         public PopupGameOverAnimationComponent PopupGameOverAnimationComponent;
         public PopupPauseComponent PopupPauseComponent;
@@ -70,6 +68,6 @@ namespace Game
 
         public int StartHealth;
 
-        public Animator PlayerAnimator;
+        public Vector3 PlayerPosition;
     }
 }
