@@ -1,3 +1,4 @@
+using Game;
 using UnityEngine;
 
 namespace Shop
@@ -14,6 +15,8 @@ namespace Shop
             {
                 ShopScene.ShopMoveBackgroundComponent[i].Initialize(shopModel, ShopScene);
             }
+            
+            ShopScene.SpawnButtonsShopComponent.Initialize(shopModel, ShopScene);
         }
     }
 }

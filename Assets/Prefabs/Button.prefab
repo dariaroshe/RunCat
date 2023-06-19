@@ -132,6 +132,8 @@ GameObject:
   - component: {fileID: 8700708165006218127}
   - component: {fileID: 8700708165006218126}
   - component: {fileID: 8700708165006218125}
+  - component: {fileID: 8135176207401043103}
+  - component: {fileID: 6924547887107765638}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -242,6 +244,32 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8135176207401043103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8700708165006218123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ae88d48bf5a474b8b77c19a83079fa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _skinButtonSetSpriteComponent: {fileID: 6924547887107765638}
+--- !u!114 &6924547887107765638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8700708165006218123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea1a08d56d6348308c988d324b01015a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _image: {fileID: 209489631161217722}
 --- !u!1 &8700708165463500021
 GameObject:
   m_ObjectHideFlags: 0
