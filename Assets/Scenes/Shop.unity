@@ -1428,6 +1428,7 @@ GameObject:
   - component: {fileID: 702606421}
   - component: {fileID: 702606420}
   - component: {fileID: 702606419}
+  - component: {fileID: 702606422}
   m_Layer: 5
   m_Name: SelectButton
   m_TagString: Untagged
@@ -1537,6 +1538,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 702606417}
   m_CullTransparentMesh: 1
+--- !u!114 &702606422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702606417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e470b1e26134ca798154eff583a5d95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 702606419}
 --- !u!1 &779579945
 GameObject:
   m_ObjectHideFlags: 0
@@ -4035,4 +4049,5 @@ MonoBehaviour:
   SkinsCollectionInfo: {fileID: 11400000, guid: 7fb0847737c69c14e95e9038cf72930f, type: 2}
   SpawnButtonsShopComponent: {fileID: 1396682537}
   ChangeSkinComponent: {fileID: 1876374747}
+  SaveCurrentSkinComponent: {fileID: 702606422}
   BackgroundSpeed: 4

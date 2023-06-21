@@ -12,6 +12,8 @@ namespace Shop
         public SpawnButtonsShopComponent SpawnButtonsShopComponent;
 
         public ChangeSkinComponent ChangeSkinComponent;
+
+        public SaveCurrentSkinComponent SaveCurrentSkinComponent;
         
         public float BackgroundSpeed;
     }
