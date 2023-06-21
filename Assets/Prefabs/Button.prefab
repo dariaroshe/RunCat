@@ -59,7 +59,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 8135176207401043103}
   - component: {fileID: 6924547887107765638}
   - component: {fileID: 5102961495410310378}
+  - component: {fileID: 1153621327182349687}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -259,6 +260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _skinButtonSetSpriteComponent: {fileID: 6924547887107765638}
   _selectSkinScrollComponent: {fileID: 5102961495410310378}
+  _buttonSelectionComponent: {fileID: 1153621327182349687}
 --- !u!114 &6924547887107765638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,6 +287,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _button: {fileID: 8700708165006218125}
+--- !u!114 &1153621327182349687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8700708165006218123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3977f4816234832b9c7573f8b9b8705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _image: {fileID: 8700708165006218126}
+  _defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  _selectedColor: {r: 0.9647059, g: 1, b: 0.5137255, a: 1}
 --- !u!1 &8700708165463500021
 GameObject:
   m_ObjectHideFlags: 0

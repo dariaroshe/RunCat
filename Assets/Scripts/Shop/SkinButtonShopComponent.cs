@@ -10,6 +10,7 @@ namespace Shop
 
         [SerializeField] private SkinButtonSetSpriteComponent _skinButtonSetSpriteComponent;
         [SerializeField] private SelectSkinScrollComponent _selectSkinScrollComponent;
+        [SerializeField] private ButtonSelectionComponent _buttonSelectionComponent;
 
         public void Initialize(ShopModel shopModel, ShopScene shopScene, int skinIndex)
         {
@@ -19,6 +20,7 @@ namespace Shop
             
             _skinButtonSetSpriteComponent.Initialize(_shopModel, _shopScene, _skinIndex);
             _selectSkinScrollComponent.Initialize(_shopModel, _shopScene, _skinIndex);
+            _buttonSelectionComponent.Initialize(_shopModel, _shopScene, _skinIndex);
         }
     }
 }
