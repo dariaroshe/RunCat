@@ -17,6 +17,8 @@ namespace Shop
             }
             
             ShopScene.SpawnButtonsShopComponent.Initialize(shopModel, ShopScene);
+            
+            ShopScene.ChangeSkinComponent.Initialize(shopModel, ShopScene);
         }
     }
 }

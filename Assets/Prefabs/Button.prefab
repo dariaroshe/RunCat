@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 8700708165006218125}
   - component: {fileID: 8135176207401043103}
   - component: {fileID: 6924547887107765638}
+  - component: {fileID: 5102961495410310378}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -257,6 +258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skinButtonSetSpriteComponent: {fileID: 6924547887107765638}
+  _selectSkinScrollComponent: {fileID: 5102961495410310378}
 --- !u!114 &6924547887107765638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,6 +272,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _image: {fileID: 209489631161217722}
+--- !u!114 &5102961495410310378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8700708165006218123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19c5612fd34b41edadc41fa06a3dc26b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 8700708165006218125}
 --- !u!1 &8700708165463500021
 GameObject:
   m_ObjectHideFlags: 0

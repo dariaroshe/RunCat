@@ -10,6 +10,8 @@ namespace Shop
         public SkinsCollectionInfo SkinsCollectionInfo;
 
         public SpawnButtonsShopComponent SpawnButtonsShopComponent;
+
+        public ChangeSkinComponent ChangeSkinComponent;
         
         public float BackgroundSpeed;
     }
