@@ -56,6 +56,7 @@ namespace Game
         public SpeedComponent SpeedComponent;
 
         public SavePointsComponent SavePointsComponent;
+        public SaveGameCurrencyComponent SaveGameCurrencyComponent;
 
         public Transform[] Platforms;
 

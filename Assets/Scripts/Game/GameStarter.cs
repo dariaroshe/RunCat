@@ -61,6 +61,7 @@ namespace Game
             GameScene.SpeedComponent.Initialize(gameModel, GameScene);
             
             GameScene.SavePointsComponent.Initialize(gameModel, GameScene);
+            GameScene.SaveGameCurrencyComponent.Initialize(gameModel, GameScene);
         }
     }
 }

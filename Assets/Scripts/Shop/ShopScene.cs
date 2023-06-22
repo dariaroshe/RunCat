@@ -14,6 +14,8 @@ namespace Shop
         public ChangeSkinComponent ChangeSkinComponent;
 
         public SaveCurrentSkinComponent SaveCurrentSkinComponent;
+
+        public MaxGameCurrencyComponent MaxGameCurrencyComponent;
         
         public float BackgroundSpeed;
     }

@@ -3917,6 +3917,7 @@ MonoBehaviour:
   SpawnAccelerationComponent: {fileID: 157984975}
   SpeedComponent: {fileID: 225436356}
   SavePointsComponent: {fileID: 1263935521}
+  SaveGameCurrencyComponent: {fileID: 1263935522}
   Platforms:
   - {fileID: 386040089}
   - {fileID: 1848937290}
@@ -4364,6 +4365,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1263935520}
   - component: {fileID: 1263935521}
+  - component: {fileID: 1263935522}
   m_Layer: 0
   m_Name: SaveGame
   m_TagString: Untagged
@@ -4395,6 +4397,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe50bd9fb3134922abe5579037788455, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1263935522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263935519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec3cb46fa34b4b369a9b39242adb378f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1286240648

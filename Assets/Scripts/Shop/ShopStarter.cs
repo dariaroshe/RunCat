@@ -21,6 +21,8 @@ namespace Shop
             ShopScene.ChangeSkinComponent.Initialize(shopModel, ShopScene);
             
             ShopScene.SaveCurrentSkinComponent.Initialize(shopModel, ShopScene);
+            
+            ShopScene.MaxGameCurrencyComponent.Initialize(shopModel, ShopScene);
         }
     }
 }
