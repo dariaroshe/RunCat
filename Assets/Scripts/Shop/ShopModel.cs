@@ -7,5 +7,7 @@ namespace Shop
         public readonly Field<int> CurrentSkin = new Field<int>();
         
         public readonly Field<int> GameCurrency = new Field<int>();
+
+        public ObservableHashSet<int> BoughtSkins = new ObservableHashSet<int>();
     }
 }

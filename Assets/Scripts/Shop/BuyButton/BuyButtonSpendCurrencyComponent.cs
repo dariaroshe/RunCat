@@ -28,12 +28,14 @@ namespace Shop.BuyButton
         {
             var currency = _shopModel.GameCurrency.Value;
             var price = _shopScene.SkinsCollectionInfo.Skins[_shopModel.CurrentSkin.Value].Price;
+            var skinIndex = _shopModel.CurrentSkin.Value;
 
             if (currency >= price)
             {
                 var spendCurrency = currency - price;
 
                 _shopModel.GameCurrency.Value = spendCurrency;
+                _shopModel.BoughtSkins.Add(skinIndex);
             }
         }
     }

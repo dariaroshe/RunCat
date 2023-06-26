@@ -22,7 +22,7 @@ namespace Shop
         public ChangeGameCurrencyComponent ChangeGameCurrencyComponent;
 
         public BuyButtonSpendCurrencyComponent BuyButtonSpendCurrencyComponent;
-        
+
         public float BackgroundSpeed;
     }
 }
