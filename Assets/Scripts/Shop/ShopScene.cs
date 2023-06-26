@@ -1,3 +1,6 @@
+using Shop.BuyButton;
+using Shop.GameCurrencyShop;
+using Shop.SkinButton;
 using Skins;
 using UnityEngine;
 
@@ -14,8 +17,11 @@ namespace Shop
         public ChangeSkinComponent ChangeSkinComponent;
 
         public SaveCurrentSkinComponent SaveCurrentSkinComponent;
+        public ShopSaveCurrencyComponent ShopSaveCurrencyComponent;
 
-        public MaxGameCurrencyComponent MaxGameCurrencyComponent;
+        public ChangeGameCurrencyComponent ChangeGameCurrencyComponent;
+
+        public BuyButtonSpendCurrencyComponent BuyButtonSpendCurrencyComponent;
         
         public float BackgroundSpeed;
     }

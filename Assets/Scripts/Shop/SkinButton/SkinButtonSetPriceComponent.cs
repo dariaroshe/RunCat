@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace Shop
+namespace Shop.SkinButton
 {
     public class SkinButtonSetPriceComponent : MonoBehaviour
     {

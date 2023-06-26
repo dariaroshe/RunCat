@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Shop
+namespace Shop.SkinButton
 {
     public class SkinButtonShopComponent : MonoBehaviour
     {

@@ -1418,6 +1418,49 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &702357518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 702357519}
+  - component: {fileID: 702357520}
+  m_Layer: 0
+  m_Name: SaveGameCurrency
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &702357519
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702357518}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2005408204}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &702357520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702357518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b800a1390d7454fa2564206308db5c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &702606417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1923,6 +1966,7 @@ GameObject:
   - component: {fileID: 832021152}
   - component: {fileID: 832021151}
   - component: {fileID: 832021150}
+  - component: {fileID: 832021154}
   m_Layer: 5
   m_Name: BuyButton
   m_TagString: Untagged
@@ -2045,6 +2089,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 832021148}
   m_CullTransparentMesh: 1
+--- !u!114 &832021154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832021148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2908df577cca4738b3e32b3dd4b9e8a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 832021151}
 --- !u!1 &887320896
 GameObject:
   m_ObjectHideFlags: 0
@@ -4412,6 +4469,7 @@ Transform:
   - {fileID: 2125606344}
   - {fileID: 601834149}
   - {fileID: 1396682536}
+  - {fileID: 702357519}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4469,5 +4527,7 @@ MonoBehaviour:
   SpawnButtonsShopComponent: {fileID: 1396682537}
   ChangeSkinComponent: {fileID: 1876374747}
   SaveCurrentSkinComponent: {fileID: 702606422}
-  MaxGameCurrencyComponent: {fileID: 816186527}
+  ShopSaveCurrencyComponent: {fileID: 702357520}
+  ChangeGameCurrencyComponent: {fileID: 816186527}
+  BuyButtonSpendCurrencyComponent: {fileID: 832021154}
   BackgroundSpeed: 4

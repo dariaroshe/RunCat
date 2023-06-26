@@ -1,8 +1,7 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Shop
+namespace Shop.SkinButton
 {
     public class SelectSkinScrollComponent : MonoBehaviour
     {

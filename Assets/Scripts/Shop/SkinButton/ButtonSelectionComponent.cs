@@ -1,10 +1,7 @@
-using System;
-using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
-using UnityEngine.UI;
 using Image = UnityEngine.UI.Image;
 
-namespace Shop
+namespace Shop.SkinButton
 {
     public class ButtonSelectionComponent : MonoBehaviour
     {

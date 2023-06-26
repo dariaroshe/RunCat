@@ -11,6 +11,8 @@ namespace Shop
         {
             var shopModel = new ShopModel();
 
+            shopModel.GameCurrency.Value = PlayerPrefs.GetInt("maxGameCurrency");
+
             for (int i = 0; i < ShopScene.ShopMoveBackgroundComponent.Length; i++)
             {
                 ShopScene.ShopMoveBackgroundComponent[i].Initialize(shopModel, ShopScene);
@@ -22,7 +24,11 @@ namespace Shop
             
             ShopScene.SaveCurrentSkinComponent.Initialize(shopModel, ShopScene);
             
-            ShopScene.MaxGameCurrencyComponent.Initialize(shopModel, ShopScene);
+            ShopScene.ChangeGameCurrencyComponent.Initialize(shopModel, ShopScene);
+            
+            ShopScene.BuyButtonSpendCurrencyComponent.Initialize(shopModel, ShopScene);
+            
+            ShopScene.ShopSaveCurrencyComponent.Initialize(shopModel, ShopScene);
         }
     }
 }
