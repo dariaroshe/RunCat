@@ -27,6 +27,7 @@ namespace Shop
             ShopScene.ChangeGameCurrencyComponent.Initialize(shopModel, ShopScene);
             
             ShopScene.BuyButtonSpendCurrencyComponent.Initialize(shopModel, ShopScene);
+            ShopScene.ShowBuyButtonComponent.Initialize(shopModel, ShopScene);
             
             ShopScene.ShopSaveCurrencyComponent.Initialize(shopModel, ShopScene);
             

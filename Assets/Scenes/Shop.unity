@@ -388,6 +388,7 @@ GameObject:
   - component: {fileID: 121668028}
   - component: {fileID: 121668030}
   - component: {fileID: 121668029}
+  - component: {fileID: 121668031}
   m_Layer: 5
   m_Name: SelectCharacterScreen
   m_TagString: Untagged
@@ -442,6 +443,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 121668027}
   m_CullTransparentMesh: 1
+--- !u!114 &121668031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121668027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0ac0e9762ce4053aef1533052b38940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonBuy: {fileID: 832021151}
+  _buttonSelect: {fileID: 702606419}
 --- !u!1 &142712506
 GameObject:
   m_ObjectHideFlags: 0
@@ -4587,6 +4602,7 @@ MonoBehaviour:
   ShopSaveCurrencyComponent: {fileID: 702357520}
   ChangeGameCurrencyComponent: {fileID: 816186527}
   BuyButtonSpendCurrencyComponent: {fileID: 832021154}
+  ShowBuyButtonComponent: {fileID: 121668031}
   SaveBoughtSkinsComponent: {fileID: 1698772432}
   LoadSaveBoughtSkinsComponent: {fileID: 1698772431}
   BackgroundSpeed: 4

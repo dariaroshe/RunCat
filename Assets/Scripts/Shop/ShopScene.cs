@@ -23,6 +23,7 @@ namespace Shop
         public ChangeGameCurrencyComponent ChangeGameCurrencyComponent;
 
         public BuyButtonSpendCurrencyComponent BuyButtonSpendCurrencyComponent;
+        public ShowBuyButtonComponent ShowBuyButtonComponent;
 
         public SaveBoughtSkinsComponent SaveBoughtSkinsComponent;
         public LoadSaveBoughtSkinsComponent LoadSaveBoughtSkinsComponent;

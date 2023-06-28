@@ -28,6 +28,11 @@ namespace Service
             _hashSet.Clear();
         }
 
+        public bool Contains(T item)
+        {
+            return _hashSet.Contains(item);
+        }
+
         public IEnumerator<T> GetEnumerator()
         {
             return _hashSet.GetEnumerator();
