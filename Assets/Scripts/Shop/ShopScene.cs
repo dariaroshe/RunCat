@@ -1,3 +1,4 @@
+using Shop.BoughtSkins;
 using Shop.BuyButton;
 using Shop.GameCurrencyShop;
 using Shop.SkinButton;
@@ -22,6 +23,9 @@ namespace Shop
         public ChangeGameCurrencyComponent ChangeGameCurrencyComponent;
 
         public BuyButtonSpendCurrencyComponent BuyButtonSpendCurrencyComponent;
+
+        public SaveBoughtSkinsComponent SaveBoughtSkinsComponent;
+        public LoadSaveBoughtSkinsComponent LoadSaveBoughtSkinsComponent;
 
         public float BackgroundSpeed;
     }

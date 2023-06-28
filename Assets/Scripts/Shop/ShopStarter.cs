@@ -29,6 +29,9 @@ namespace Shop
             ShopScene.BuyButtonSpendCurrencyComponent.Initialize(shopModel, ShopScene);
             
             ShopScene.ShopSaveCurrencyComponent.Initialize(shopModel, ShopScene);
+            
+            ShopScene.SaveBoughtSkinsComponent.Initialize(shopModel, ShopScene);
+            ShopScene.LoadSaveBoughtSkinsComponent.Initialize(shopModel, ShopScene);
         }
     }
 }

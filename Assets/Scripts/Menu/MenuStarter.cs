@@ -10,6 +10,8 @@ namespace Menu
         private void Start()
         {
             var menuModel = new MenuModel();
+            
+            MenuScene.AddFirstSkinComponent.Initialize(menuModel, MenuScene);
 
             for (int i = 0; i < MenuScene.MenuMoveBackgroundComponent.Length; i++)
             {

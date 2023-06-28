@@ -3662,6 +3662,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1696741389}
   m_CullTransparentMesh: 1
+--- !u!1 &1698772429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1698772430}
+  - component: {fileID: 1698772432}
+  - component: {fileID: 1698772431}
+  m_Layer: 0
+  m_Name: SaveAndLoadBoughtSkins
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1698772430
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698772429}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2005408204}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1698772431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698772429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b9bbb780014bcba7b1c1bfcbaa55f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1698772432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698772429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57f9e1ed69d94427a3816612d7432d73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1750842245
 GameObject:
   m_ObjectHideFlags: 0
@@ -4470,6 +4526,7 @@ Transform:
   - {fileID: 601834149}
   - {fileID: 1396682536}
   - {fileID: 702357519}
+  - {fileID: 1698772430}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4530,4 +4587,6 @@ MonoBehaviour:
   ShopSaveCurrencyComponent: {fileID: 702357520}
   ChangeGameCurrencyComponent: {fileID: 816186527}
   BuyButtonSpendCurrencyComponent: {fileID: 832021154}
+  SaveBoughtSkinsComponent: {fileID: 1698772432}
+  LoadSaveBoughtSkinsComponent: {fileID: 1698772431}
   BackgroundSpeed: 4
