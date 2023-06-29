@@ -27,8 +27,8 @@ namespace Shop.BuyButton
         private void OnClick()
         {
             var currency = _shopModel.GameCurrency.Value;
-            var price = _shopScene.SkinsCollectionInfo.Skins[_shopModel.CurrentSkin.Value].Price;
-            var skinIndex = _shopModel.CurrentSkin.Value;
+            var price = _shopScene.SkinsCollectionInfo.Skins[_shopModel.SelectedSkin.Value].Price;
+            var skinIndex = _shopModel.SelectedSkin.Value;
 
             if (currency >= price)
             {

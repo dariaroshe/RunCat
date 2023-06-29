@@ -23,6 +23,7 @@ namespace Shop
             ShopScene.ChangeSkinComponent.Initialize(shopModel, ShopScene);
             
             ShopScene.SaveCurrentSkinComponent.Initialize(shopModel, ShopScene);
+            ShopScene.SetCurrentSkinComponent.Initialize(shopModel, ShopScene);
             
             ShopScene.ChangeGameCurrencyComponent.Initialize(shopModel, ShopScene);
             

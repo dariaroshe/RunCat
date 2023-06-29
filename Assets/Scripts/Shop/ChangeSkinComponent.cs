@@ -16,19 +16,19 @@ namespace Shop
             _shopModel = shopModel;
             _shopScene = shopScene;
             
-            _image.sprite = _shopScene.SkinsCollectionInfo.Skins[_shopModel.CurrentSkin.Value].Icon;
+            _image.sprite = _shopScene.SkinsCollectionInfo.Skins[_shopModel.SelectedSkin.Value].Icon;
 
-            _shopModel.CurrentSkin.Changed += OnChangedCurrentSkin;
+            _shopModel.SelectedSkin.Changed += OnChangedSelectedSkin;
         }
         
         private void OnDestroy()
         {
-            _shopModel.CurrentSkin.Changed -= OnChangedCurrentSkin;
+            _shopModel.SelectedSkin.Changed -= OnChangedSelectedSkin;
         }
 
-        private void OnChangedCurrentSkin()
+        private void OnChangedSelectedSkin()
         {
-            _image.sprite = _shopScene.SkinsCollectionInfo.Skins[_shopModel.CurrentSkin.Value].Icon;
+            _image.sprite = _shopScene.SkinsCollectionInfo.Skins[_shopModel.SelectedSkin.Value].Icon;
         }
     }
 }

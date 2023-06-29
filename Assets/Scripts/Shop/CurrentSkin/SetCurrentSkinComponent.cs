@@ -1,10 +1,9 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Shop
+namespace Shop.CurrentSkin
 {
-    public class SaveCurrentSkinComponent : ShopComponent
+    public class SetCurrentSkinComponent : ShopComponent
     {
         private ShopModel _shopModel;
         private ShopScene _shopScene;
@@ -26,13 +25,9 @@ namespace Shop
 
         private void OnClick()
         {
-            var currentSkin = _shopModel.CurrentSkin.Value;
-            
-            PlayerPrefs.SetInt("CurrentSkin", currentSkin);
+            var selectedSkin = _shopModel.SelectedSkin.Value;
 
-            var a = PlayerPrefs.GetInt("CurrentSkin", 0);
-            
-            Debug.Log(a);
+            _shopModel.CurrentSkin.Value = selectedSkin;
         }
     }
 }

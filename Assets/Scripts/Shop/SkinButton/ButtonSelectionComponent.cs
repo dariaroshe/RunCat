@@ -21,24 +21,24 @@ namespace Shop.SkinButton
             
             UpdateColor();
             
-            _shopModel.CurrentSkin.Changed += OnChangedCurrentSkin;
+            _shopModel.SelectedSkin.Changed += OnChangedSelectedSkin;
         }
 
         private void OnDestroy()
         {
-            _shopModel.CurrentSkin.Changed -= OnChangedCurrentSkin;
+            _shopModel.SelectedSkin.Changed -= OnChangedSelectedSkin;
         }
 
-        private void OnChangedCurrentSkin()
+        private void OnChangedSelectedSkin()
         {
             UpdateColor();
         }
 
         private void UpdateColor()
         {
-            var currentSkin = _shopModel.CurrentSkin.Value;
+            var selectedSkin = _shopModel.SelectedSkin.Value;
 
-            if (currentSkin == _skinIndex)
+            if (selectedSkin == _skinIndex)
             {
                 _image.color = _selectedColor;
             }

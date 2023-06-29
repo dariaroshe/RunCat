@@ -27,7 +27,7 @@ namespace Shop.SkinButton
 
         private void OnClicked()
         {
-            _shopModel.CurrentSkin.Value = _skinIndex;
+            _shopModel.SelectedSkin.Value = _skinIndex;
         }
     }
 }

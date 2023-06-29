@@ -19,13 +19,13 @@ namespace Shop.BuyButton
 
             UpdateVisible();
 
-            _shopModel.CurrentSkin.Changed += OnChangedCurrentSkin;
+            _shopModel.SelectedSkin.Changed += OnChangedSelectedSkin;
             _shopModel.BoughtSkins.ItemAdded += OnItemAdded;
         }
 
         private void OnDestroy()
         {
-            _shopModel.CurrentSkin.Changed -= OnChangedCurrentSkin;
+            _shopModel.SelectedSkin.Changed -= OnChangedSelectedSkin;
             _shopModel.BoughtSkins.ItemAdded -= OnItemAdded;
         }
 
@@ -34,14 +34,14 @@ namespace Shop.BuyButton
             UpdateVisible();
         }
 
-        private void OnChangedCurrentSkin()
+        private void OnChangedSelectedSkin()
         {
             UpdateVisible();
         }
 
         private void UpdateVisible()
         {
-            var currentSkin = _shopModel.CurrentSkin.Value;
+            var currentSkin = _shopModel.SelectedSkin.Value;
 
             if (_shopModel.BoughtSkins.Contains(currentSkin))
             {

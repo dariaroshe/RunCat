@@ -1,5 +1,6 @@
 using Shop.BoughtSkins;
 using Shop.BuyButton;
+using Shop.CurrentSkin;
 using Shop.GameCurrencyShop;
 using Shop.SkinButton;
 using Skins;
@@ -18,8 +19,9 @@ namespace Shop
         public ChangeSkinComponent ChangeSkinComponent;
 
         public SaveCurrentSkinComponent SaveCurrentSkinComponent;
+        public SetCurrentSkinComponent SetCurrentSkinComponent;
+        
         public ShopSaveCurrencyComponent ShopSaveCurrencyComponent;
-
         public ChangeGameCurrencyComponent ChangeGameCurrencyComponent;
 
         public BuyButtonSpendCurrencyComponent BuyButtonSpendCurrencyComponent;
