@@ -306,6 +306,7 @@ MonoBehaviour:
   _image: {fileID: 8700708165006218126}
   _defaultColor: {r: 1, g: 1, b: 1, a: 1}
   _selectedColor: {r: 0.9647059, g: 1, b: 0.5137255, a: 1}
+  _currentColor: {r: 0.36663678, g: 1, b: 0.3622641, a: 1}
 --- !u!114 &8034137155855919808
 MonoBehaviour:
   m_ObjectHideFlags: 0

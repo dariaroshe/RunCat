@@ -1,9 +1,9 @@
 using UnityEngine;
-using Image = UnityEngine.UI.Image;
+using UnityEngine.UI;
 
 namespace Shop.SkinButton
 {
-    public class ButtonSelectionComponent : MonoBehaviour
+    public class ButtonSelectionCurrentSkinComponent : MonoBehaviour
     {
         private ShopModel _shopModel;
         private ShopScene _shopScene;
@@ -12,29 +12,21 @@ namespace Shop.SkinButton
         [SerializeField] private Image _image;
         [SerializeField] private Color _defaultColor;
         [SerializeField] private Color _selectedColor;
-        [SerializeField] private Color _currentColor;
 
         public void Initialize(ShopModel shopModel, ShopScene shopScene, int skinIndex)
         {
             _shopModel = shopModel;
             _shopScene = shopScene;
             _skinIndex = skinIndex;
-
+            
             UpdateColor();
-
-            _shopModel.SelectedSkin.Changed += OnChangedSelectedSkin;
+            
             _shopModel.CurrentSkin.Changed += OnChangedCurrentSkin;
         }
 
         private void OnDestroy()
         {
-            _shopModel.SelectedSkin.Changed -= OnChangedSelectedSkin;
             _shopModel.CurrentSkin.Changed -= OnChangedCurrentSkin;
-        }
-
-        private void OnChangedSelectedSkin()
-        {
-            UpdateColor();
         }
 
         private void OnChangedCurrentSkin()
@@ -47,17 +39,13 @@ namespace Shop.SkinButton
             var selectedSkin = _shopModel.SelectedSkin.Value;
             var currentSkin = _shopModel.CurrentSkin.Value;
 
-            if (selectedSkin == _skinIndex)
+            if (selectedSkin == currentSkin)
             {
                 _image.color = _selectedColor;
             }
-            else if (currentSkin == _skinIndex)
-            {
-                _image.color = _currentColor;
-            }
             else
             {
-                _image.color = _defaultColor;
+               // _image.color = _defaultColor;
             }
         }
     }
