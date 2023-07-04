@@ -1,7 +1,7 @@
 using Shop.BoughtSkins;
 using Shop.BuyButton;
-using Shop.CurrentSkin;
 using Shop.GameCurrencyShop;
+using Shop.SelectButton;
 using Shop.SkinButton;
 using Skins;
 using UnityEngine;
@@ -29,6 +29,8 @@ namespace Shop
 
         public SaveBoughtSkinsComponent SaveBoughtSkinsComponent;
         public LoadSaveBoughtSkinsComponent LoadSaveBoughtSkinsComponent;
+
+        public SelectButtonChangedTextComponent SelectButtonChangedTextComponent;
 
         public float BackgroundSpeed;
     }

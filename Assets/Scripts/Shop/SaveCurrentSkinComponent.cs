@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Shop.CurrentSkin
+namespace Shop
 {
     public class SaveCurrentSkinComponent : ShopComponent
     {

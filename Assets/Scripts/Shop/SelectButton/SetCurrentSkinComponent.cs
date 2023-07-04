@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Shop.CurrentSkin
+namespace Shop.SelectButton
 {
     public class SetCurrentSkinComponent : ShopComponent
     {

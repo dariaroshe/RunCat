@@ -34,6 +34,8 @@ namespace Shop
             
             ShopScene.SaveBoughtSkinsComponent.Initialize(shopModel, ShopScene);
             ShopScene.LoadSaveBoughtSkinsComponent.Initialize(shopModel, ShopScene);
+            
+            ShopScene.SelectButtonChangedTextComponent.Initialize(shopModel, ShopScene);
         }
     }
 }

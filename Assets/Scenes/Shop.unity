@@ -1532,6 +1532,7 @@ GameObject:
   - component: {fileID: 702606420}
   - component: {fileID: 702606419}
   - component: {fileID: 702606422}
+  - component: {fileID: 702606423}
   m_Layer: 5
   m_Name: SelectButton
   m_TagString: Untagged
@@ -1556,7 +1557,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 60, y: 50}
+  m_AnchoredPosition: {x: 60, y: 100}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &702606419
@@ -1653,6 +1654,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 164c7df251a44e76b4924bce2e812170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _button: {fileID: 702606419}
+--- !u!114 &702606423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702606417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3796f07e0473423cbef45e7ac37f4382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _text: {fileID: 110949499}
   _button: {fileID: 702606419}
 --- !u!1 &779579945
 GameObject:
@@ -4636,4 +4651,5 @@ MonoBehaviour:
   ShowBuyButtonComponent: {fileID: 121668031}
   SaveBoughtSkinsComponent: {fileID: 1698772432}
   LoadSaveBoughtSkinsComponent: {fileID: 1698772431}
+  SelectButtonChangedTextComponent: {fileID: 702606423}
   BackgroundSpeed: 4
