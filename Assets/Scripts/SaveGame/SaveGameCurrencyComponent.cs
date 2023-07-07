@@ -26,11 +26,11 @@ namespace SaveGame
             if (_gameModel.GameState.Value == GameState.GameOver)
             {
                 var gameCurrency = _gameModel.GameCurrency.Value;
-                var maxGameCurrency = PlayerPrefs.GetInt("maxGameCurrency", 0);
+                var maxGameCurrency = PlayerPrefs.GetInt(Constants.GameCurrency, 0);
 
                 var sumGameCurrency = gameCurrency + maxGameCurrency;
 
-                PlayerPrefs.SetInt("maxGameCurrency", sumGameCurrency);
+                PlayerPrefs.SetInt(Constants.GameCurrency, sumGameCurrency);
             }
         }
     }

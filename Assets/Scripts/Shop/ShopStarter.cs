@@ -11,7 +11,7 @@ namespace Shop
         {
             var shopModel = new ShopModel();
 
-            shopModel.GameCurrency.Value = PlayerPrefs.GetInt("maxGameCurrency");
+            shopModel.GameCurrency.Value = PlayerPrefs.GetInt(Constants.GameCurrency);
 
             for (int i = 0; i < ShopScene.ShopMoveBackgroundComponent.Length; i++)
             {

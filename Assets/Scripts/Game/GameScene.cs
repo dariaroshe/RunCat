@@ -8,7 +8,8 @@ using Player;
 using Points;
 using Popups;
 using SaveGame;
-using Skins;
+using Shop.SelectBackground.Backgrounds;
+using Shop.SelectCharacter.Skins;
 using UnityEngine;
 
 namespace Game
@@ -16,6 +17,7 @@ namespace Game
     public class GameScene : MonoBehaviour
     {
         public SkinsCollectionInfo SkinsCollectionInfo;
+        public BackgroundCollectionInfo BackgroundCollectionInfo;
 
         public PlayerSpawnComponent PlayerSpawnComponent;
         
@@ -62,6 +64,9 @@ namespace Game
 
         public GameObject[] Barriers;
         public GameObject[] Items;
+
+        public SpriteRenderer[] Backgrounds;
+        public ChangeBackgroundComponent ChangeBackgroundComponent;
 
         public float StartSpeed;
         public float MaxSpeed;

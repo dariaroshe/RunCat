@@ -1,9 +1,10 @@
-using Shop.BoughtSkins;
-using Shop.BuyButton;
-using Shop.GameCurrencyShop;
-using Shop.SelectButton;
-using Shop.SkinButton;
-using Skins;
+using Shop.SelectCharacter;
+using Shop.SelectCharacter.BoughtSkins;
+using Shop.SelectCharacter.BuyButton;
+using Shop.SelectCharacter.GameCurrencyShop;
+using Shop.SelectCharacter.SelectButton;
+using Shop.SelectCharacter.SkinButton;
+using Shop.SelectCharacter.Skins;
 using UnityEngine;
 
 namespace Shop

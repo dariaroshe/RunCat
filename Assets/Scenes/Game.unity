@@ -1898,6 +1898,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 554900540}
+  - component: {fileID: 554900541}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -1926,6 +1927,18 @@ Transform:
   m_Father: {fileID: 10757120}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &554900541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554900539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1620d52a914640e9bb7c68ba41e9d773, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &580937308
 GameObject:
   m_ObjectHideFlags: 0
@@ -3880,6 +3893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkinsCollectionInfo: {fileID: 11400000, guid: 7fb0847737c69c14e95e9038cf72930f, type: 2}
+  BackgroundCollectionInfo: {fileID: 11400000, guid: c36fd7193d095de43b72fd43a7c58573, type: 2}
   PlayerSpawnComponent: {fileID: 2035833706}
   DeadPlayerComponent: {fileID: 1784649331}
   StartGameComponent: {fileID: 983947957}
@@ -3926,6 +3940,14 @@ MonoBehaviour:
   - {fileID: 882964111665069010, guid: 011183fd8747f16459bf0751135ddfcc, type: 3}
   - {fileID: 7752976441191549643, guid: ed8b96ea8b50d9044b23195598a7b94d, type: 3}
   Items: []
+  Backgrounds:
+  - {fileID: 1396615134}
+  - {fileID: 866263668}
+  - {fileID: 2133445200}
+  - {fileID: 149510530}
+  - {fileID: 1309064132}
+  - {fileID: 1081137383}
+  ChangeBackgroundComponent: {fileID: 554900541}
   StartSpeed: 4
   MaxSpeed: 25
   Acceleration: 0.01

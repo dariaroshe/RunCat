@@ -62,6 +62,8 @@ namespace Game
             
             GameScene.SavePointsComponent.Initialize(gameModel, GameScene);
             GameScene.SaveGameCurrencyComponent.Initialize(gameModel, GameScene);
+            
+            GameScene.ChangeBackgroundComponent.Initialize(GameScene.Backgrounds, GameScene.BackgroundCollectionInfo);
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Menu
             _menuModel = menuModel;
             _menuScene = menuScene;
 
-            _textMaxPoints.text = PlayerPrefs.GetInt("maxPoints").ToString();
+            _textMaxPoints.text = PlayerPrefs.GetInt(Constants.MaxPoints).ToString();
         }
     }
 }

@@ -13,7 +13,7 @@ namespace Player
             _gameModel = gameModel;
             _gameScene = gameScene;
 
-            var skinIndex = 0;
+            var skinIndex = PlayerPrefs.GetInt(Constants.CurrentSkinKey, 0);
             var skinInfo = _gameScene.SkinsCollectionInfo.Skins[skinIndex];
             var prefab = skinInfo.Prefab;
 

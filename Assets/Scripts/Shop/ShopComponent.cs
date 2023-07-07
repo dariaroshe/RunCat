@@ -1,3 +1,4 @@
+using Shop.SelectCharacter;
 using UnityEngine;
 
 namespace Shop

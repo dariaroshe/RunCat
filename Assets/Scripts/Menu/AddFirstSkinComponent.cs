@@ -1,4 +1,5 @@
 using System.Linq;
+using Game;
 using UnityEngine;
 
 namespace Menu
@@ -13,11 +14,11 @@ namespace Menu
             _menuModel = menuModel;
             _menuScene = menuScene;
 
-            var stringBoughtSkins = PlayerPrefs.GetString("BoughtSkins");
+            var stringBoughtSkins = PlayerPrefs.GetString(Constants.BoughtSkins);
 
             if (string.IsNullOrEmpty(stringBoughtSkins))
             {
-                PlayerPrefs.SetString("BoughtSkins", "0");
+                PlayerPrefs.SetString(Constants.BoughtSkins, "0");
             }
         }
     }

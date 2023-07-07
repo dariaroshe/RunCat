@@ -27,11 +27,11 @@ namespace SaveGame
             if (_gameModel.GameState.Value == GameState.GameOver)
             {
                 var points = _gameModel.Points.Value;
-                var maxPoints = PlayerPrefs.GetInt("maxPoints", 0);
+                var maxPoints = PlayerPrefs.GetInt(Constants.MaxPoints, 0);
 
                 if (points > maxPoints)
                 {
-                    PlayerPrefs.SetInt("maxPoints", points);
+                    PlayerPrefs.SetInt(Constants.MaxPoints, points);
                 }
             }
         }

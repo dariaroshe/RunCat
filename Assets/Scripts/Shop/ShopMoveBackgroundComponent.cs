@@ -1,4 +1,4 @@
-using Service;
+using Shop.SelectCharacter;
 using UnityEngine;
 
 namespace Shop
