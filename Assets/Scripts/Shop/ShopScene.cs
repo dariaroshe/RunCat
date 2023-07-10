@@ -41,6 +41,7 @@ namespace Shop
         public SelectButtonChangedTextComponent SelectButtonChangedTextComponent;
 
         public BuyButtonSpendCurrencyBackgroundComponent BuyButtonSpendCurrencyBackgroundComponent;
+        public ShowBuyButtonBackgroundComponent ShowBuyButtonBackgroundComponent;
 
         public float BackgroundSpeed;
     }

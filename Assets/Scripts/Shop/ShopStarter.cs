@@ -40,6 +40,7 @@ namespace Shop
             ShopScene.SelectButtonChangedTextComponent.Initialize(shopModel, ShopScene);
             
             ShopScene.BuyButtonSpendCurrencyBackgroundComponent.Initialize(shopModel, ShopScene);
+            ShopScene.ShowBuyButtonBackgroundComponent.Initialize(shopModel, ShopScene);
         }
     }
 }

@@ -3909,6 +3909,7 @@ GameObject:
   - component: {fileID: 1474336665}
   - component: {fileID: 1474336667}
   - component: {fileID: 1474336666}
+  - component: {fileID: 1474336668}
   m_Layer: 5
   m_Name: 'SelectBackgroundsScreen '
   m_TagString: Untagged
@@ -3962,6 +3963,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1474336664}
   m_CullTransparentMesh: 1
+--- !u!114 &1474336668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474336664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af10e2aab05a474e8c5fa0f94b73d403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonBuy: {fileID: 6701148}
+  _buttonSelect: {fileID: 740997537}
 --- !u!1 &1679434607
 GameObject:
   m_ObjectHideFlags: 0
@@ -5225,4 +5240,5 @@ MonoBehaviour:
   LoadSaveBoughtSkinsComponent: {fileID: 1698772431}
   SelectButtonChangedTextComponent: {fileID: 702606423}
   BuyButtonSpendCurrencyBackgroundComponent: {fileID: 6701151}
+  ShowBuyButtonBackgroundComponent: {fileID: 1474336668}
   BackgroundSpeed: 4
