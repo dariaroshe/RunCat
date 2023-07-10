@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 6701150}
   - component: {fileID: 6701149}
   - component: {fileID: 6701148}
+  - component: {fileID: 6701151}
   m_Layer: 5
   m_Name: BuyButton
   m_TagString: Untagged
@@ -244,6 +245,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6701146}
   m_CullTransparentMesh: 1
+--- !u!114 &6701151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6701146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac7e8e853034e08985a2724fcdbe59c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 6701148}
 --- !u!1 &7802515
 GameObject:
   m_ObjectHideFlags: 0
@@ -5210,4 +5224,5 @@ MonoBehaviour:
   SaveBoughtSkinsComponent: {fileID: 1698772432}
   LoadSaveBoughtSkinsComponent: {fileID: 1698772431}
   SelectButtonChangedTextComponent: {fileID: 702606423}
+  BuyButtonSpendCurrencyBackgroundComponent: {fileID: 6701151}
   BackgroundSpeed: 4

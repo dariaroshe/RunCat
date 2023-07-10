@@ -1,6 +1,7 @@
 using Shop.SelectBackground;
 using Shop.SelectBackground.BackgroundButton;
 using Shop.SelectBackground.Backgrounds;
+using Shop.SelectBackground.BuyButtonBackground;
 using Shop.SelectCharacter;
 using Shop.SelectCharacter.BoughtSkins;
 using Shop.SelectCharacter.BuyButton;
@@ -38,6 +39,8 @@ namespace Shop
         public LoadSaveBoughtSkinsComponent LoadSaveBoughtSkinsComponent;
 
         public SelectButtonChangedTextComponent SelectButtonChangedTextComponent;
+
+        public BuyButtonSpendCurrencyBackgroundComponent BuyButtonSpendCurrencyBackgroundComponent;
 
         public float BackgroundSpeed;
     }

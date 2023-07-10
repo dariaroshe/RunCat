@@ -38,6 +38,8 @@ namespace Shop
             ShopScene.LoadSaveBoughtSkinsComponent.Initialize(shopModel, ShopScene);
             
             ShopScene.SelectButtonChangedTextComponent.Initialize(shopModel, ShopScene);
+            
+            ShopScene.BuyButtonSpendCurrencyBackgroundComponent.Initialize(shopModel, ShopScene);
         }
     }
 }
