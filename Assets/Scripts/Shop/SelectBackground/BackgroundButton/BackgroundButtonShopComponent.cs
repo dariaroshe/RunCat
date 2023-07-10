@@ -9,6 +9,9 @@ namespace Shop.SelectBackground.BackgroundButton
         private int _skinIndex;
 
         [SerializeField] private BackgroundButtonSetSpriteComponent _backgroundButtonSetSpriteComponent;
+        [SerializeField] private SelectBackgroundScrollComponent _selectBackgroundScrollComponent;
+        [SerializeField] private BackgroundButtonSetPriceComponent _backgroundButtonSetPriceComponent;
+        
         public void Initialize(ShopModel shopModel, ShopScene shopScene, int skinIndex)
         {
             _shopModel = shopModel;
@@ -16,6 +19,8 @@ namespace Shop.SelectBackground.BackgroundButton
             _skinIndex = skinIndex;
             
             _backgroundButtonSetSpriteComponent.Initialize(_shopModel, _shopScene, _skinIndex);
+            _selectBackgroundScrollComponent.Initialize(_shopModel, _shopScene, _skinIndex);
+            _backgroundButtonSetPriceComponent.Initialize(_shopModel, _shopScene, _skinIndex);
         }
     }
 }

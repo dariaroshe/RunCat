@@ -89,6 +89,8 @@ GameObject:
   - component: {fileID: 7856643375238520293}
   - component: {fileID: 7307403780430220181}
   - component: {fileID: 6608731495676617284}
+  - component: {fileID: 5979332574366107270}
+  - component: {fileID: 6319116041607881865}
   m_Layer: 5
   m_Name: ButtonBackground
   m_TagString: Untagged
@@ -212,6 +214,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _backgroundButtonSetSpriteComponent: {fileID: 6608731495676617284}
+  _selectBackgroundScrollComponent: {fileID: 5979332574366107270}
+  _backgroundButtonSetPriceComponent: {fileID: 6319116041607881865}
 --- !u!114 &6608731495676617284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,6 +229,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _image: {fileID: 1684128324884905170}
+--- !u!114 &5979332574366107270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7856643375238520291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c2ee75f91749688a4031cdfa8da74d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 7856643375238520293}
+--- !u!114 &6319116041607881865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7856643375238520291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dd0af0c3660423dbc8db180957bede6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textPrice: {fileID: 7856643375729420959}
 --- !u!1 &7856643375729420957
 GameObject:
   m_ObjectHideFlags: 0
