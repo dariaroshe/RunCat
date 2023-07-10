@@ -1,3 +1,4 @@
+using Shop.SelectBackground;
 using Shop.SelectBackground.BackgroundButton;
 using Shop.SelectBackground.Backgrounds;
 using Shop.SelectCharacter;
@@ -22,6 +23,7 @@ namespace Shop
         public SpawnButtonsBackgroundsComponent SpawnButtonsBackgroundsComponent;
 
         public ChangeSkinComponent ChangeSkinComponent;
+        public ChangeCurrentSkinComponent ChangeCurrentSkinComponent;
 
         public SaveCurrentSkinComponent SaveCurrentSkinComponent;
         public SetCurrentSkinComponent SetCurrentSkinComponent;
