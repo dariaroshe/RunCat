@@ -29,6 +29,8 @@ namespace Shop
 
         public SaveCurrentSkinComponent SaveCurrentSkinComponent;
         public SetCurrentSkinComponent SetCurrentSkinComponent;
+
+        public SetCurrentBackgroundComponent SetCurrentBackgroundComponent;
         
         public ShopSaveCurrencyComponent ShopSaveCurrencyComponent;
         public ChangeGameCurrencyComponent[] ChangeGameCurrencyComponent;

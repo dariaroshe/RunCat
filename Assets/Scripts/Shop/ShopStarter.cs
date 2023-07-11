@@ -26,6 +26,8 @@ namespace Shop
             
             ShopScene.SaveCurrentSkinComponent.Initialize(shopModel, ShopScene);
             ShopScene.SetCurrentSkinComponent.Initialize(shopModel, ShopScene);
+            
+            ShopScene.SetCurrentBackgroundComponent.Initialize(shopModel, ShopScene);
 
             for (int i = 0; i < ShopScene.ChangeGameCurrencyComponent.Length; i++)
             {

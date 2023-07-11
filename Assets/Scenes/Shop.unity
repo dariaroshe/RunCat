@@ -2007,6 +2007,7 @@ GameObject:
   - component: {fileID: 740997538}
   - component: {fileID: 740997537}
   - component: {fileID: 740997540}
+  - component: {fileID: 740997541}
   m_Layer: 5
   m_Name: SelectButton
   m_TagString: Untagged
@@ -2129,6 +2130,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _text: {fileID: 617573497}
+  _button: {fileID: 740997537}
+--- !u!114 &740997541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740997535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9def4e5239244a68dd3e432cc2bb068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _button: {fileID: 740997537}
 --- !u!1 &779579945
 GameObject:
@@ -5318,6 +5332,7 @@ MonoBehaviour:
   ChangeCurrentSkinBackgroundScreenComponent: {fileID: 1928230852}
   SaveCurrentSkinComponent: {fileID: 7802517}
   SetCurrentSkinComponent: {fileID: 702606422}
+  SetCurrentBackgroundComponent: {fileID: 740997541}
   ShopSaveCurrencyComponent: {fileID: 702357520}
   ChangeGameCurrencyComponent:
   - {fileID: 816186527}
