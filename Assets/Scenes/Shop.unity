@@ -5300,7 +5300,7 @@ MonoBehaviour:
   SpawnButtonsShopComponent: {fileID: 1396682537}
   SpawnButtonsBackgroundsComponent: {fileID: 697038684}
   ChangeSkinComponent: {fileID: 1876374747}
-  ChangeCurrentSkinComponent: {fileID: 1928230852}
+  ChangeCurrentSkinBackgroundScreenComponent: {fileID: 1928230852}
   SaveCurrentSkinComponent: {fileID: 7802517}
   SetCurrentSkinComponent: {fileID: 702606422}
   ShopSaveCurrencyComponent: {fileID: 702357520}

@@ -10,17 +10,17 @@ namespace Shop.SelectBackground.BackgroundButton
     {
         private ShopModel _shopModel;
         private ShopScene _shopScene;
-        private int _skinIndex;
+        private int _backgroundIndex;
 
         [SerializeField] private Image _image;
 
-        public void Initialize(ShopModel shopModel, ShopScene shopScene, int skinIndex)
+        public void Initialize(ShopModel shopModel, ShopScene shopScene, int backgroundIndex)
         {
             _shopModel = shopModel;
             _shopScene = shopScene;
-            _skinIndex = skinIndex;
+            _backgroundIndex = backgroundIndex;
 
-            _image.sprite = _shopScene.BackgroundCollectionInfo.Backgrounds[_skinIndex].Icon;
+            _image.sprite = _shopScene.BackgroundCollectionInfo.Backgrounds[_backgroundIndex].Icon;
         }
     }
 }

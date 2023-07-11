@@ -22,7 +22,7 @@ namespace Shop
             ShopScene.SpawnButtonsBackgroundsComponent.Initialize(shopModel, ShopScene);
             
             ShopScene.ChangeSkinComponent.Initialize(shopModel, ShopScene);
-            ShopScene.ChangeCurrentSkinComponent.Initialize(shopModel, ShopScene);
+            ShopScene.ChangeCurrentSkinBackgroundScreenComponent.Initialize(shopModel, ShopScene);
             
             ShopScene.SaveCurrentSkinComponent.Initialize(shopModel, ShopScene);
             ShopScene.SetCurrentSkinComponent.Initialize(shopModel, ShopScene);

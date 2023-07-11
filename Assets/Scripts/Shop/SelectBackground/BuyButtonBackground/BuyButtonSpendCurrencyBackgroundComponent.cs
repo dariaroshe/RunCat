@@ -27,14 +27,14 @@ namespace Shop.SelectBackground.BuyButtonBackground
         {
             var currency = _shopModel.GameCurrency.Value;
             var price = _shopScene.BackgroundCollectionInfo.Backgrounds[_shopModel.SelectedBackground.Value].Price;
-            var skinIndex = _shopModel.SelectedBackground.Value;
+            var backgroundIndex = _shopModel.SelectedBackground.Value;
 
             if (currency >= price)
             {
                 var spendCurrency = currency - price;
 
                 _shopModel.GameCurrency.Value = spendCurrency;
-                _shopModel.BoughtBackgrounds.Add(skinIndex);
+                _shopModel.BoughtBackgrounds.Add(backgroundIndex);
             }
         }
     }

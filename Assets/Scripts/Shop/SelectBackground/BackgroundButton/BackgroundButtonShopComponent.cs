@@ -6,21 +6,23 @@ namespace Shop.SelectBackground.BackgroundButton
     {
         private ShopModel _shopModel;
         private ShopScene _shopScene;
-        private int _skinIndex;
+        private int _backgroundIndex;
 
         [SerializeField] private BackgroundButtonSetSpriteComponent _backgroundButtonSetSpriteComponent;
         [SerializeField] private SelectBackgroundScrollComponent _selectBackgroundScrollComponent;
         [SerializeField] private BackgroundButtonSetPriceComponent _backgroundButtonSetPriceComponent;
+        [SerializeField] private HidePriceBackgroundButtonComponent _hidePriceBackgroundButtonComponent;
         
-        public void Initialize(ShopModel shopModel, ShopScene shopScene, int skinIndex)
+        public void Initialize(ShopModel shopModel, ShopScene shopScene, int backgroundIndex)
         {
             _shopModel = shopModel;
             _shopScene = shopScene;
-            _skinIndex = skinIndex;
+            _backgroundIndex = backgroundIndex;
             
-            _backgroundButtonSetSpriteComponent.Initialize(_shopModel, _shopScene, _skinIndex);
-            _selectBackgroundScrollComponent.Initialize(_shopModel, _shopScene, _skinIndex);
-            _backgroundButtonSetPriceComponent.Initialize(_shopModel, _shopScene, _skinIndex);
+            _backgroundButtonSetSpriteComponent.Initialize(_shopModel, _shopScene, _backgroundIndex);
+            _selectBackgroundScrollComponent.Initialize(_shopModel, _shopScene, _backgroundIndex);
+            _backgroundButtonSetPriceComponent.Initialize(_shopModel, _shopScene, _backgroundIndex);
+            _hidePriceBackgroundButtonComponent.Initialize(_shopModel, _shopScene, _backgroundIndex);
         }
     }
 }

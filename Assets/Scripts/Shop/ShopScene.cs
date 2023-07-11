@@ -24,7 +24,7 @@ namespace Shop
         public SpawnButtonsBackgroundsComponent SpawnButtonsBackgroundsComponent;
 
         public ChangeSkinComponent ChangeSkinComponent;
-        public ChangeCurrentSkinComponent ChangeCurrentSkinComponent;
+        public ChangeCurrentSkinBackgroundScreenComponent ChangeCurrentSkinBackgroundScreenComponent;
 
         public SaveCurrentSkinComponent SaveCurrentSkinComponent;
         public SetCurrentSkinComponent SetCurrentSkinComponent;

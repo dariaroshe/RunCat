@@ -7,17 +7,17 @@ namespace Shop.SelectBackground.BackgroundButton
     {
         private ShopModel _shopModel;
         private ShopScene _shopScene;
-        private int _skinIndex;
+        private int _backgroundIndex;
 
         [SerializeField] private TextMeshProUGUI _textPrice;
 
-        public void Initialize(ShopModel shopModel, ShopScene shopScene, int skinIndex)
+        public void Initialize(ShopModel shopModel, ShopScene shopScene, int backgroundIndex)
         {
             _shopModel = shopModel;
             _shopScene = shopScene;
-            _skinIndex = skinIndex;
+            _backgroundIndex = backgroundIndex;
 
-            var price = _shopScene.BackgroundCollectionInfo.Backgrounds[_skinIndex].Price;
+            var price = _shopScene.BackgroundCollectionInfo.Backgrounds[_backgroundIndex].Price;
             _textPrice.text = $"<rotate=-25><sprite=0></rotate> x{price}";
         }
     }

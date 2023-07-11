@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Shop.SelectCharacter.SkinButton
 {
-    public class HidePriceComponent : MonoBehaviour
+    public class HidePriceSkinButtonComponent : MonoBehaviour
     {
         private ShopModel _shopModel;
         private ShopScene _shopScene;

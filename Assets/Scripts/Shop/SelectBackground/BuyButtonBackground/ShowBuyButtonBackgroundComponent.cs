@@ -40,9 +40,9 @@ namespace Shop.SelectBackground.BuyButtonBackground
 
         private void UpdateVisible()
         {
-            var currentSkin = _shopModel.SelectedBackground.Value;
+            var currentBackground = _shopModel.SelectedBackground.Value;
 
-            if (_shopModel.BoughtBackgrounds.Contains(currentSkin))
+            if (_shopModel.BoughtBackgrounds.Contains(currentBackground))
             {
                 _buttonBuy.gameObject.SetActive(false);
                 _buttonSelect.gameObject.SetActive(true);

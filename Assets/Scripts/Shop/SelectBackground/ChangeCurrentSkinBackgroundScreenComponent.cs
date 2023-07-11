@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 namespace Shop.SelectBackground
 {
-    public class ChangeCurrentSkinComponent : ShopComponent
+    public class ChangeCurrentSkinBackgroundScreenComponent : ShopComponent
     {
         private ShopModel _shopModel;
         private ShopScene _shopScene;
