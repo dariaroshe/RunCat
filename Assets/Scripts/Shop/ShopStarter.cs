@@ -43,7 +43,9 @@ namespace Shop
             ShopScene.SaveBoughtBackgroundsComponent.Initialize(shopModel, ShopScene);
             ShopScene.LoadSaveBoughtBackgroundsComponent.Initialize(shopModel, ShopScene);
             
-            ShopScene.SelectButtonChangedTextComponent.Initialize(shopModel, ShopScene);
+            ShopScene.SelectSkinButtonChangeTextComponent.Initialize(shopModel, ShopScene);
+            
+            ShopScene.SelectBackgroundButtonChangeTextComponent.Initialize(shopModel, ShopScene);
             
             ShopScene.BuyButtonSpendCurrencyBackgroundComponent.Initialize(shopModel, ShopScene);
             ShopScene.ShowBuyButtonBackgroundComponent.Initialize(shopModel, ShopScene);

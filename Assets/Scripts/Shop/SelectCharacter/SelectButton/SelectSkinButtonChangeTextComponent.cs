@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace Shop.SelectCharacter.SelectButton
 {
-    public class SelectButtonChangedTextComponent : ShopComponent
+    public class SelectSkinButtonChangeTextComponent : ShopComponent
     {
         private ShopModel _shopModel;
         private ShopScene _shopScene;
