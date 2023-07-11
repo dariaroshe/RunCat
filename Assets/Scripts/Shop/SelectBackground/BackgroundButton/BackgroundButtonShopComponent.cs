@@ -12,6 +12,7 @@ namespace Shop.SelectBackground.BackgroundButton
         [SerializeField] private SelectBackgroundScrollComponent _selectBackgroundScrollComponent;
         [SerializeField] private BackgroundButtonSetPriceComponent _backgroundButtonSetPriceComponent;
         [SerializeField] private HidePriceBackgroundButtonComponent _hidePriceBackgroundButtonComponent;
+        [SerializeField] private BackgroundButtonSelectionComponent _backgroundButtonSelectionComponent;
         
         public void Initialize(ShopModel shopModel, ShopScene shopScene, int backgroundIndex)
         {
@@ -23,6 +24,7 @@ namespace Shop.SelectBackground.BackgroundButton
             _selectBackgroundScrollComponent.Initialize(_shopModel, _shopScene, _backgroundIndex);
             _backgroundButtonSetPriceComponent.Initialize(_shopModel, _shopScene, _backgroundIndex);
             _hidePriceBackgroundButtonComponent.Initialize(_shopModel, _shopScene, _backgroundIndex);
+            _backgroundButtonSelectionComponent.Initialize(_shopModel, _shopScene, _backgroundIndex);
         }
     }
 }

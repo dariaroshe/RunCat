@@ -10,10 +10,9 @@ namespace Shop.SelectCharacter.SkinButton
 
         [SerializeField] private SkinButtonSetSpriteComponent _skinButtonSetSpriteComponent;
         [SerializeField] private SelectSkinScrollComponent _selectSkinScrollComponent;
-        [SerializeField] private ButtonSelectionComponent _buttonSelectionComponent;
+        [SerializeField] private SkinButtonSelectionComponent _skinButtonSelectionComponent;
         [SerializeField] private SkinButtonSetPriceComponent _skinButtonSetPriceComponent;
-        [SerializeField] private HidePriceSkinButtonComponent HidePriceSkinButtonComponent;
-
+        [SerializeField] private HidePriceSkinButtonComponent _hidePriceSkinButtonComponent;
         public void Initialize(ShopModel shopModel, ShopScene shopScene, int skinIndex)
         {
             _shopModel = shopModel;
@@ -22,9 +21,9 @@ namespace Shop.SelectCharacter.SkinButton
             
             _skinButtonSetSpriteComponent.Initialize(_shopModel, _shopScene, _skinIndex);
             _selectSkinScrollComponent.Initialize(_shopModel, _shopScene, _skinIndex);
-            _buttonSelectionComponent.Initialize(_shopModel, _shopScene, _skinIndex);
+            _skinButtonSelectionComponent.Initialize(_shopModel, _shopScene, _skinIndex);
             _skinButtonSetPriceComponent.Initialize(_shopModel, _shopScene, _skinIndex);
-            HidePriceSkinButtonComponent.Initialize(_shopModel, _shopScene, _skinIndex);
+            _hidePriceSkinButtonComponent.Initialize(_shopModel, _shopScene, _skinIndex);
         }
     }
 }

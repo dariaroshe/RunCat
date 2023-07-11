@@ -3,7 +3,7 @@ using Image = UnityEngine.UI.Image;
 
 namespace Shop.SelectCharacter.SkinButton
 {
-    public class ButtonSelectionComponent : MonoBehaviour
+    public class SkinButtonSelectionComponent : MonoBehaviour
     {
         private ShopModel _shopModel;
         private ShopScene _shopScene;

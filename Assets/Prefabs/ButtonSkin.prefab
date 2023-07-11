@@ -262,9 +262,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _skinButtonSetSpriteComponent: {fileID: 6924547887107765638}
   _selectSkinScrollComponent: {fileID: 5102961495410310378}
-  _buttonSelectionComponent: {fileID: 1153621327182349687}
+  _skinButtonSelectionComponent: {fileID: 1153621327182349687}
   _skinButtonSetPriceComponent: {fileID: 8034137155855919808}
-  _hidePriceComponent: {fileID: 430766122837026196}
+  _hidePriceSkinButtonComponent: {fileID: 430766122837026196}
 --- !u!114 &6924547887107765638
 MonoBehaviour:
   m_ObjectHideFlags: 0
