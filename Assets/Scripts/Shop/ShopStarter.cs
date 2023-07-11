@@ -26,9 +26,12 @@ namespace Shop
             
             ShopScene.SaveCurrentSkinComponent.Initialize(shopModel, ShopScene);
             ShopScene.SetCurrentSkinComponent.Initialize(shopModel, ShopScene);
-            
-            ShopScene.ChangeGameCurrencyComponent.Initialize(shopModel, ShopScene);
-            
+
+            for (int i = 0; i < ShopScene.ChangeGameCurrencyComponent.Length; i++)
+            {
+                ShopScene.ChangeGameCurrencyComponent[i].Initialize(shopModel, ShopScene);
+            }
+
             ShopScene.BuyButtonSpendCurrencyComponent.Initialize(shopModel, ShopScene);
             ShopScene.ShowBuyButtonComponent.Initialize(shopModel, ShopScene);
             
@@ -36,6 +39,9 @@ namespace Shop
             
             ShopScene.SaveBoughtSkinsComponent.Initialize(shopModel, ShopScene);
             ShopScene.LoadSaveBoughtSkinsComponent.Initialize(shopModel, ShopScene);
+            
+            ShopScene.SaveBoughtBackgroundsComponent.Initialize(shopModel, ShopScene);
+            ShopScene.LoadSaveBoughtBackgroundsComponent.Initialize(shopModel, ShopScene);
             
             ShopScene.SelectButtonChangedTextComponent.Initialize(shopModel, ShopScene);
             

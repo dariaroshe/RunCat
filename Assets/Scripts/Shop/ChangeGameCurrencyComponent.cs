@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace Shop.SelectCharacter.GameCurrencyShop
+namespace Shop
 {
     public class ChangeGameCurrencyComponent : ShopComponent
     {

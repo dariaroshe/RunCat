@@ -1,7 +1,7 @@
 using Game;
 using UnityEngine;
 
-namespace Shop.SelectCharacter.GameCurrencyShop
+namespace Shop
 {
     public class ShopSaveCurrencyComponent : ShopComponent
     {
