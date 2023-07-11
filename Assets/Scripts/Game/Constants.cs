@@ -7,5 +7,6 @@ namespace Game
         public const string MaxPoints = "maxPoints";
         public const string BoughtSkins = "BoughtSkins";
         public const string BoughtBackgrounds = "BoughtBackgrounds";
+        public const string CurrentBackgroundKey = "CurrentBackground";
     }
 }

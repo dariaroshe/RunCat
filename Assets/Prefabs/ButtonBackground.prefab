@@ -284,7 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4251903f38284fc98dc9755ac94bfd09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _image: {fileID: 1684128324884905170}
+  _image: {fileID: 7856643375238520294}
   _defaultColor: {r: 1, g: 1, b: 1, a: 1}
   _selectedColor: {r: 0.9647059, g: 1, b: 0.5137255, a: 1}
   _currentColor: {r: 0.3647059, g: 1, b: 0.36078432, a: 1}

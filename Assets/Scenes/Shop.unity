@@ -1375,6 +1375,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367053735}
   m_CullTransparentMesh: 1
+--- !u!1 &370750623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 370750624}
+  - component: {fileID: 370750625}
+  m_Layer: 0
+  m_Name: SaveCurrentBackground
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &370750624
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370750623}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2005408204}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &370750625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370750623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef71fb06be28410d94b70093a5d99034, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &583758539
 GameObject:
   m_ObjectHideFlags: 0
@@ -5137,6 +5180,7 @@ Transform:
   - {fileID: 7802516}
   - {fileID: 697038683}
   - {fileID: 1314442224}
+  - {fileID: 370750624}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5332,6 +5376,7 @@ MonoBehaviour:
   ChangeCurrentSkinBackgroundScreenComponent: {fileID: 1928230852}
   SaveCurrentSkinComponent: {fileID: 7802517}
   SetCurrentSkinComponent: {fileID: 702606422}
+  SaveCurrentBackgroundComponent: {fileID: 370750625}
   SetCurrentBackgroundComponent: {fileID: 740997541}
   ShopSaveCurrencyComponent: {fileID: 702357520}
   ChangeGameCurrencyComponent:

@@ -30,6 +30,7 @@ namespace Shop
         public SaveCurrentSkinComponent SaveCurrentSkinComponent;
         public SetCurrentSkinComponent SetCurrentSkinComponent;
 
+        public SaveCurrentBackgroundComponent SaveCurrentBackgroundComponent;
         public SetCurrentBackgroundComponent SetCurrentBackgroundComponent;
         
         public ShopSaveCurrencyComponent ShopSaveCurrencyComponent;
