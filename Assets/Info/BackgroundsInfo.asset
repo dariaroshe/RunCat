@@ -23,7 +23,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 972b013f3877c6d439e04beb625bc4f3, type: 3}
     - {fileID: 21300000, guid: 972b013f3877c6d439e04beb625bc4f3, type: 3}
   - Icon: {fileID: 21300000, guid: cbef2fb8d44aed94297177261be84de5, type: 3}
-    Price: 10
+    Price: 4
     BackgroundsSprite:
     - {fileID: 21300000, guid: 168d4c89695ec554d84b438bd781f3a0, type: 3}
     - {fileID: 21300000, guid: 168d4c89695ec554d84b438bd781f3a0, type: 3}
