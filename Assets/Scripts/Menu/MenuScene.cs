@@ -1,9 +1,13 @@
+using Background;
+using Shop.SelectBackground.Backgrounds;
 using UnityEngine;
 
 namespace Menu
 {
     public class MenuScene : MonoBehaviour
     {
+        public BackgroundCollectionInfo BackgroundCollectionInfo;
+
         public AddFirstSkinComponent AddFirstSkinComponent;
         public AddFirstBackgroundComponent AddFirstBackgroundComponent;
         
@@ -15,5 +19,8 @@ namespace Menu
         public MaxPointsTextComponent MaxPointsTextComponent;
 
         public float BackgroundSpeed;
+        
+        public SpriteRenderer[] Backgrounds;
+        public ChangeBackgroundComponent ChangeBackgroundComponent;
     }
 }

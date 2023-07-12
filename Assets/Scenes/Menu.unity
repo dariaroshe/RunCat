@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29190920}
+  - component: {fileID: 29190921}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -159,6 +160,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &29190921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29190919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1620d52a914640e9bb7c68ba41e9d773, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &90175244
 GameObject:
   m_ObjectHideFlags: 0
@@ -1656,6 +1669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4ecdb6a52064906a84f390dfed7a0c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BackgroundCollectionInfo: {fileID: 11400000, guid: c36fd7193d095de43b72fd43a7c58573, type: 2}
   AddFirstSkinComponent: {fileID: 1601087685}
   AddFirstBackgroundComponent: {fileID: 893270065}
   MenuMoveBackgroundComponent:
@@ -1669,6 +1683,14 @@ MonoBehaviour:
   ShopButtonComponent: {fileID: 555766801}
   MaxPointsTextComponent: {fileID: 1197688330}
   BackgroundSpeed: 4
+  Backgrounds:
+  - {fileID: 1971219994}
+  - {fileID: 2015109475}
+  - {fileID: 1854591811}
+  - {fileID: 1816507201}
+  - {fileID: 90175246}
+  - {fileID: 1501779314}
+  ChangeBackgroundComponent: {fileID: 29190921}
 --- !u!1 &1601087683
 GameObject:
   m_ObjectHideFlags: 0

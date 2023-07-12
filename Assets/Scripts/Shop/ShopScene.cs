@@ -1,3 +1,4 @@
+using Background;
 using Shop.SelectBackground;
 using Shop.SelectBackground.BackgroundButton;
 using Shop.SelectBackground.Backgrounds;
@@ -53,5 +54,8 @@ namespace Shop
         public ShowBuyButtonBackgroundComponent ShowBuyButtonBackgroundComponent;
 
         public float BackgroundSpeed;
+        
+        public SpriteRenderer[] Backgrounds;
+        public ChangeBackgroundShopComponent ChangeBackgroundShopComponent;
     }
 }

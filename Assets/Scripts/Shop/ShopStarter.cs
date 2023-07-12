@@ -12,6 +12,8 @@ namespace Shop
             var shopModel = new ShopModel();
 
             shopModel.GameCurrency.Value = PlayerPrefs.GetInt(Constants.GameCurrency);
+            shopModel.SelectedBackground.Value = PlayerPrefs.GetInt(Constants.CurrentBackgroundKey);
+            shopModel.SelectedSkin.Value = PlayerPrefs.GetInt(Constants.CurrentSkinKey);
 
             for (int i = 0; i < ShopScene.ShopMoveBackgroundComponent.Length; i++)
             {
@@ -52,6 +54,8 @@ namespace Shop
             
             ShopScene.BuyButtonSpendCurrencyBackgroundComponent.Initialize(shopModel, ShopScene);
             ShopScene.ShowBuyButtonBackgroundComponent.Initialize(shopModel, ShopScene);
+            
+            ShopScene.ChangeBackgroundShopComponent.Initialize(shopModel, ShopScene.Backgrounds, ShopScene.BackgroundCollectionInfo);
         }
     }
 }

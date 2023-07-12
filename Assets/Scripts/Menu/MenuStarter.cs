@@ -23,6 +23,8 @@ namespace Menu
             MenuScene.ShopButtonComponent.Initialize(menuModel, MenuScene);
             
             MenuScene.MaxPointsTextComponent.Initialize(menuModel, MenuScene);
+            
+            MenuScene.ChangeBackgroundComponent.Initialize(MenuScene.Backgrounds, MenuScene.BackgroundCollectionInfo);
         }
     }
 }
