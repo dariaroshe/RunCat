@@ -56,6 +56,13 @@ namespace Shop
             ShopScene.ShowBuyButtonBackgroundComponent.Initialize(shopModel, ShopScene);
             
             ShopScene.ChangeBackgroundShopComponent.Initialize(shopModel, ShopScene.Backgrounds, ShopScene.BackgroundCollectionInfo);
+            
+            ShopScene.ShowScreenComponent.Initialize(shopModel, ShopScene);
+            
+            for (int i = 0; i < ShopScene.SetScreenShopComponent.Length; i++)
+            {
+                ShopScene.SetScreenShopComponent[i].Initialize(shopModel, ShopScene);
+            }
         }
     }
 }
