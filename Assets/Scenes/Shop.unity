@@ -799,7 +799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvasGroup: {fileID: 121668029}
-  _speed: 0.5
+  _speed: 2
 --- !u!1 &142712506
 GameObject:
   m_ObjectHideFlags: 0
@@ -2832,6 +2832,7 @@ GameObject:
   - component: {fileID: 920081035}
   - component: {fileID: 920081034}
   - component: {fileID: 920081033}
+  - component: {fileID: 920081036}
   m_Layer: 5
   m_Name: MenuButton
   m_TagString: Untagged
@@ -2941,6 +2942,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 920081031}
   m_CullTransparentMesh: 1
+--- !u!114 &920081036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920081031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbdc02a288964412aaf5b320ac872ca3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 920081033}
 --- !u!1 &980660452
 GameObject:
   m_ObjectHideFlags: 0
@@ -4097,7 +4111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvasGroup: {fileID: 1453428154}
-  _speed: 0.5
+  _speed: 2
 --- !u!1 &1468215271
 GameObject:
   m_ObjectHideFlags: 0
@@ -4239,7 +4253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvasGroup: {fileID: 1474336666}
-  _speed: 0.5
+  _speed: 2
 --- !u!1 &1578582914
 GameObject:
   m_ObjectHideFlags: 0
@@ -5699,6 +5713,7 @@ MonoBehaviour:
   - {fileID: 76260484}
   - {fileID: 1799803696}
   - {fileID: 1829377423}
+  ButtonMenuComponent: {fileID: 920081036}
   BackgroundSpeed: 4
   Backgrounds:
   - {fileID: 887320898}

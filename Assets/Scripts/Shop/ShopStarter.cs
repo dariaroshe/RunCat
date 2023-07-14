@@ -63,6 +63,8 @@ namespace Shop
             {
                 ShopScene.SetScreenShopComponent[i].Initialize(shopModel, ShopScene);
             }
+            
+            ShopScene.ButtonMenuComponent.Initialize(shopModel, ShopScene);
         }
     }
 }

@@ -57,6 +57,8 @@ namespace Shop
         public ShowScreenComponent ShowScreenComponent;
         public SetScreenShopComponent[] SetScreenShopComponent;
 
+        public ButtonMenuComponent ButtonMenuComponent;
+
         public float BackgroundSpeed;
         
         public SpriteRenderer[] Backgrounds;
