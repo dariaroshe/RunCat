@@ -20,6 +20,7 @@ namespace GameCurrency
             if (other.TryGetComponent<RunPlayerComponent>(out var cat))
             {
                 _gameModel.GameCurrency.Value++;
+                _gameScene.SoundsComponent.MilkCollectSound.Play();
                 Destroy(gameObject);
             }
         }

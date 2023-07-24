@@ -68,6 +68,8 @@ namespace Game
         public SpriteRenderer[] Backgrounds;
         public ChangeBackgroundComponent ChangeBackgroundComponent;
 
+        public SoundsComponent SoundsComponent;
+
         public float StartSpeed;
         public float MaxSpeed;
         public float Acceleration;

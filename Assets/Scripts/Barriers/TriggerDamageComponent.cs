@@ -20,6 +20,7 @@ namespace Barriers
             if (other.TryGetComponent<RunPlayerComponent>(out var barrier))
             {
                 _gameModel.Health.Value--;
+                _gameScene.SoundsComponent.DamageSound.Play();
             }
         }
     }

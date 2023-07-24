@@ -22,6 +22,7 @@ namespace AccelerationPlayer
         {
             if (other.TryGetComponent<RunPlayerComponent>(out var cat))
             {
+                _gameScene.SoundsComponent.SpeedCollectSound.Play();
                 Destroy(gameObject);
 
                 StartCoroutine(ChangeSpeed());

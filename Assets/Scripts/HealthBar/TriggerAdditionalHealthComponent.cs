@@ -21,6 +21,7 @@ namespace HealthBar
             if (other.TryGetComponent<RunPlayerComponent>(out var cat))
             {
                 _gameModel.Health.Value++;
+                _gameScene.SoundsComponent.HealthsCollectSound.Play();
                 Destroy(gameObject);
             }
         }
