@@ -22,16 +22,20 @@ namespace Game
             
             if (_gameModel.GameState.Value == GameState.Start)
             {
+                _gameScene.SoundsComponent.CountdownTickSound.Play();
                 yield return new WaitForSeconds(1);
                 countdown.Value--;
                 
+                _gameScene.SoundsComponent.CountdownTickSound.Play();
                 yield return new WaitForSeconds(1);
                 countdown.Value--;
                 
+                _gameScene.SoundsComponent.CountdownTickSound.Play();
                 yield return new WaitForSeconds(1);
                 countdown.Value--;
                 
-                yield return new WaitForSeconds(1);
+                _gameScene.SoundsComponent.CountdownGoSound.Play();
+                yield return new WaitForSeconds(0.3f);
                 _gameModel.GameState.Value = GameState.Playing;
             }
         }

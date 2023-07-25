@@ -1,13 +1,16 @@
 using UnityEngine;
 
-namespace Game
+namespace SoundsGame
 {
     public class SoundsComponent : MonoBehaviour
     {
-        public AudioSource ClickButtonSound;
+        public AudioSource CountdownTickSound;
+        public AudioSource CountdownGoSound;
         public AudioSource MilkCollectSound;
         public AudioSource HealthsCollectSound;
         public AudioSource SpeedCollectSound;
         public AudioSource DamageSound;
+        public AudioSource GameOverSound;
+        public AudioSource GameOverNewRecordSound;
     }
 }

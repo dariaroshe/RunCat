@@ -32,7 +32,10 @@ namespace SaveGame
                 if (points > maxPoints)
                 {
                     PlayerPrefs.SetInt(Constants.MaxPoints, points);
+                    _gameScene.SoundsComponent.GameOverNewRecordSound.Play();
                 }
+                
+                _gameScene.SoundsComponent.GameOverSound.Play();
             }
         }
     }
