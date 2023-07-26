@@ -1,5 +1,6 @@
 using Background;
 using Shop.SelectBackground.Backgrounds;
+using SoundsGame;
 using UnityEngine;
 
 namespace Menu
@@ -15,7 +16,8 @@ namespace Menu
 
         public StartButtonComponent StartButtonComponent;
         public ShopButtonComponent ShopButtonComponent;
-
+        public AudioButtonComponent AudioButtonComponent;
+       
         public MaxPointsTextComponent MaxPointsTextComponent;
 
         public float BackgroundSpeed;

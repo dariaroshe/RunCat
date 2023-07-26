@@ -8,5 +8,6 @@ namespace Game
         public const string BoughtSkins = "BoughtSkins";
         public const string BoughtBackgrounds = "BoughtBackgrounds";
         public const string CurrentBackgroundKey = "CurrentBackground";
+        public const string Audio = "Sound";
     }
 }

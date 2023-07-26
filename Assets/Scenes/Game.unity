@@ -7352,6 +7352,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1996548961}
   - component: {fileID: 1996548962}
+  - component: {fileID: 1996548963}
   m_Layer: 0
   m_Name: Sounds
   m_TagString: Untagged
@@ -7402,6 +7403,18 @@ MonoBehaviour:
   DamageSound: {fileID: 1732741653}
   GameOverSound: {fileID: 824876507}
   GameOverNewRecordSound: {fileID: 326913449}
+--- !u!114 &1996548963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996548960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d2759aba9ee4636aae207d052e48f7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2035833704
 GameObject:
   m_ObjectHideFlags: 0

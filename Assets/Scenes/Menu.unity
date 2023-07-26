@@ -353,6 +353,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &188427084
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 188427085}
+  - component: {fileID: 188427086}
+  m_Layer: 0
+  m_Name: Sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &188427085
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188427084}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2034299002}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &188427086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188427084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d2759aba9ee4636aae207d052e48f7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &476125523
 GameObject:
   m_ObjectHideFlags: 0
@@ -820,7 +863,7 @@ GameObject:
   - component: {fileID: 822849101}
   - component: {fileID: 822849104}
   m_Layer: 5
-  m_Name: Button_sound_off
+  m_Name: Button_sound_on
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1333,7 +1376,7 @@ GameObject:
   - component: {fileID: 1374029407}
   - component: {fileID: 1374029410}
   m_Layer: 5
-  m_Name: Button_sound_on
+  m_Name: Button_sound_off
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1741,6 +1784,7 @@ MonoBehaviour:
   - {fileID: 90175247}
   StartButtonComponent: {fileID: 1037018318}
   ShopButtonComponent: {fileID: 555766801}
+  AudioButtonComponent: {fileID: 1672734911}
   MaxPointsTextComponent: {fileID: 1197688330}
   BackgroundSpeed: 4
   Backgrounds:
@@ -1803,6 +1847,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1672734910}
+  - component: {fileID: 1672734911}
   m_Layer: 5
   m_Name: Sound
   m_TagString: Untagged
@@ -1831,6 +1876,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1672734911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672734909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f23c3e77b8e48da873a9b9f46a08221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonOff: {fileID: 1374029407}
+  _buttonOn: {fileID: 822849101}
 --- !u!1 &1816507199
 GameObject:
   m_ObjectHideFlags: 0
@@ -2434,6 +2493,7 @@ Transform:
   - {fileID: 1957484332}
   - {fileID: 1601087684}
   - {fileID: 893270064}
+  - {fileID: 188427085}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

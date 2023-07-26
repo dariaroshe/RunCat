@@ -10,7 +10,7 @@ namespace Menu
         private void Start()
         {
             var menuModel = new MenuModel();
-            
+
             MenuScene.AddFirstSkinComponent.Initialize(menuModel, MenuScene);
             MenuScene.AddFirstBackgroundComponent.Initialize(menuModel, MenuScene);
 
@@ -22,8 +22,10 @@ namespace Menu
             MenuScene.StartButtonComponent.Initialize(menuModel, MenuScene);
             MenuScene.ShopButtonComponent.Initialize(menuModel, MenuScene);
             
-            MenuScene.MaxPointsTextComponent.Initialize(menuModel, MenuScene);
+            MenuScene.AudioButtonComponent.Initialize(menuModel, MenuScene);
             
+            MenuScene.MaxPointsTextComponent.Initialize(menuModel, MenuScene);
+
             MenuScene.ChangeBackgroundComponent.Initialize(MenuScene.Backgrounds, MenuScene.BackgroundCollectionInfo);
         }
     }
